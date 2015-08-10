@@ -1,0 +1,27 @@
+{
+  "name": "ws1",
+  "version": "0.0.1",
+  "private": true,
+  "homepage": "https://github.com/iDim123/ws1",
+  "authors": [
+    "iDma123 <magmus02@gmail.com>"
+  ],
+  "description": "mysite",
+  "dependencies": {
+    "bootstrap": "~3.3.5",
+    "jquery": "~2.1.4",
+    "angular-ui-router": "~0.2.15",
+    "angular": "~1.4.3"
+  },
+  "main": "index.html",
+  "keywords": [
+    "site"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}

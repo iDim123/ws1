@@ -1,0 +1,32 @@
+{
+  "name": "ws1",
+  "version": "1.0.0",
+  "description": "Test site",
+  "main": "index.js",
+  "dependencies": {
+    "bower": "~1.4.1",
+    "grunt": "^0.4.5",
+    "grunt-contrib-concat": "^0.5.1",
+    "grunt-contrib-sass": "^0.9.2",
+    "grunt-contrib-watch": "^0.6.1",
+    "http-server": "^0.8.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "start": "http-server -a 0.0.0.0 -p 8000",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/iDim123/ws1.git"
+  },
+  "keywords": [
+    "site"
+  ],
+  "author": "Dima",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/iDim123/ws1/issues"
+  },
+  "homepage": "https://github.com/iDim123/ws1#readme"
+}
