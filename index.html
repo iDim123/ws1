@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" ng-app="app">
 <head>
   <title>Document</title>
   <meta charset="UTF-8">
@@ -8,21 +8,161 @@
   
   <link href="bower_components/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
   <link href="built/css/styles.css" rel="stylesheet">
-  
+  <link href='http://fonts.googleapis.com/css?family=Orbitron:700' rel='stylesheet' type='text/css'>
 
 </head>
 <body>
-  
-    <div class="mainConteiner" ng-app>
-      <h1>It's work! Realy</h1>
-      <p>{{2 + 2}}</p>
+     <div class="mywrapper">
+        <nav class="navbar navbar-inverse navbar-fixet-top">
+          <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              <a class="navbar-brand" href="#/">
+              <img src="images/logo2.png" alt="logo"></a>
+            </div>
 
-      <input type="text" ng-model="data.lable">
-      <button class="btn btn-success">{{data.lable}}</button>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+              <ul class="nav navbar-nav">
+                <li class="active"><a href="#/player">Состав</a></li>
+                <li><a href="#">Галлерея</a></li>
+                <li><a href="#">Проекты</a></li>
+                <li class="dropdown">
+                  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Будущее <span class="caret"></span></a>
+                  <ul class="dropdown-menu">
+                    <li class="dropdown-header">Examples</li>
+                    <li><a href="#">Action</a></li>
+                    <li><a href="#">Another action</a></li>
+                    <li><a href="#">Something else here</a></li>
+                    <li role="separator" class="divider"></li>
+                    <li><a href="#">Separated link</a></li>
+                    <li role="separator" class="divider"></li>
+                    <li><a href="#">One more separated link</a></li>
+                  </ul>
+                </li>
+              </ul>
+              <ul class="nav navbar-nav navbar-right">
+                <li><a href="#">Войти</a></li>
+                <li><a href="#/registration">Регистрация</a></li>
+              </ul>
+            </div><!-- /.navbar-collapse -->
+          </div><!-- /.container-fluid -->
+        </nav>
+        <div class="nav-sidebar">
+          <div class="myconteiner">
+            <ul class="nav__list">
+              <li class="nav__item mynav-active">
+                <a class="nav__item-link" href="#p1"></a>
+              </li>
+              <li class="nav__item">
+                <a class="nav__item-link" href="#p2"></a>
+              </li>
+              <li class="nav__item">
+                <a class="nav__item-link" href="#p3"></a>
+              </li>
+              <li class="nav__item">
+                <a class="nav__item-link" href="#p4"></a>
+              </li>
+              <li class="nav__item">
+                <a class="nav__item-link" href="#p5"></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="maincontent">
+          <section class="page section-1">
+            <div class="container" ng-controller="NewsListCtrl">
+              <div class="row first-row">
+                <p class="header__text-main">Добро пожаловать на сайт гильдии плохишей</p>
+                <p class="header__text-subtext">Новости</p>
+                <div class="header__project-active hidden-sm hidden-xs">
+                  <p class="header__project_text">Сейчас в</p>
+                  <div class="header__project_img">
+                    <img src="images/icons/newsPage/activeLogo.png" />
+                  </div>
+                </div>
+              </div>
+              <div class="row" ng-repeat="new in news" >
+                <div class="col-lg-12 test__conteiner" >
+                  <div class="conteiner_content_img hidden-sm hidden-xs">
+                      <img alt="logo" ng-src={{new.image}}>
+                  </div>   
+                  <p class="myhead__text">{{new.headtext}}</p>
+                  <p class="content__text">{{new.contenttext}}</p>
+                  <button type="button" class="btn btn-link pull-right">Читать далее</button>
+                </div>
+              </div> 
+            </div> 
+          </section>
+          <section class="page section-2">
+            
+        </section>
+          <section class="page section-3">
+            <h1>Hee</h1>
+          </section>
+          <section class="page section-4">
+            <div class="container">
+              <div id="mycarousel" class="carousel slide" data-ride="carousel" data-interval="3000">
+                <!-- Indicators -->
+                <ol class="carousel-indicators">
+                  <li data-target="#mycarousel" data-slide-to="0" class="active"></li>
+                  <li data-target="#mycarousel" data-slide-to="1"></li>
+                  <li data-target="#mycarousel" data-slide-to="2"></li>
+                  <li data-target="#mycarousel" data-slide-to="3"></li>
+                  <li data-target="#mycarousel" data-slide-to="4"></li>
+                  <li data-target="#mycarousel" data-slide-to="5"></li>
+                  <li data-target="#mycarousel" data-slide-to="6"></li>
+                </ol>
+
+                <!-- Wrapper for slides -->
+                <div class="carousel-inner" role="listbox">
+                  <div class="item active"><img src="images/carusel/001.jpg" alt="img"></div>
+                  <div class="item"><img src="images/carusel/002.jpg" alt="img"></div>
+                  <div class="item"><img src="images/carusel/003.jpg" alt="img"></div>
+                  <div class="item"><img src="images/carusel/004.jpg" alt="img"></div>
+                  <div class="item"><img src="images/carusel/005.jpg" alt="img"></div>
+                  <div class="item"><img src="images/carusel/006.jpg" alt="img"></div>
+                  <div class="item"><img src="images/carusel/007.jpg" alt="img"></div>     
+                </div>
+
+                <!-- Controls -->
+                <a class="left carousel-control" href="#mycarousel" role="button" data-slide="prev">
+                  <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                  <span class="sr-only">Previous</span>
+                </a>
+                <a class="right carousel-control" href="#mycarousel" role="button" data-slide="next">
+                  <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                  <span class="sr-only">Next</span>
+                </a>
+              </div>
+            </div>
+          </section>
+          <section class="page section-5">
+            
+          </section>
+       </div>
+<!--<div class="navbar navbar-inverse navbar-fixed-bottom">
+  <div class="container">
+   <p class="navbar-text text-center">Footer</p>
+  </div>
+</div>-->
+<!--  Will-->
+<!--<div class="container" ng-app="app">
+    <header ng-include="'templates/nav.html'"></header>
+     <div ui-view>
+      
     </div>
-    
-  
+  </div>-->
+
+  </div>
   <script src="built/js/vendors.js"></script>
-  <script src="built/js/scripts.js"></script> 
+  <script src="built/js/scripts.js"></script>  
+
 </body>
 </html>

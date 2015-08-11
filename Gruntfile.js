@@ -9,6 +9,8 @@ module.exports = function(grunt){
               'bower_components/jquery/dist/jquery.min.js',
               'bower_components/bootstrap/dist/js/bootstrap.min.js',
               'bower_components/angular/angular.min.js',
+              'bower_components/angular-ui-router/release/angular-ui-router.min.js',
+              'node_modules/jquery-mousewheel/jquery.mousewheel.js'
           ],
           dest: 'built/js/vendors.js'
       },
