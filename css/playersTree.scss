@@ -1,0 +1,123 @@
+@font-face {
+  font-family: main-font;
+  /* Гарнитура шрифта */
+  src: url(/fonts/T2LUHxYu.ttf);
+  /* Путь к файлу со шрифтом */
+}
+
+
+.heroes_ranks_header{
+  height: 100px;
+}
+.players .row{
+  //background: linear-gradient(to top, rgba(255, 255, 255, 0), rgba(144, 144, 144, 0.42));
+}
+.player-head {
+  text-align: center;
+  height: 35px;
+  font: 20px/30px Arial;
+  text-shadow: 1px 1px 1px #000000;
+  a{
+    font: 18px/20px main-font;
+    width: 250px;
+    display: inline-block;
+    color: #ea8f13;
+    padding: 5px 10px;
+    border: 2px solid darken(#ea8f13, 0.5);
+    box-shadow: 0 0 40px rgba(255, 216, 0, 0.26) inset; 
+  }
+  a:nth-child(2){
+    margin-left: 50px;
+  }
+} 
+.tree_header{
+  margin-left: 200px;
+  margin-top: 10px;
+  span{
+    font: 35px/40px Arial;
+    color: #ad921f;
+    text-shadow: 1px 1px 1px #000000;
+  }
+}
+
+
+
+  .heroes_ranks {
+    position: relative;
+    margin-bottom: 40px;
+    text-align: center;
+    cursor: default;
+  }
+  .heroes_ranks > div {
+   /* font-size: 0px;
+    height: 190px;*/
+  }
+ .heroes_ranks div div {
+    height: 190px;
+    display: inline-block;
+    position: relative;
+    overflow: hidden;
+  }
+  .heroes_ranks > div:nth-child(1) > div {
+    width: 328px;
+  }
+  .heroes_ranks > div:nth-child(2) > div {
+    width: 328px;
+  }  
+  .heroes_ranks > div:nth-child(3) > div {
+    width: 320px;
+  }
+  .heroes_ranks > div:nth-child(4) > div {
+    width: 260px;
+  }
+ .heroes_ranks > div:nth-child(5) > div {
+    width: 240px;
+    position: absolute;
+    top: 50px;
+    left: 120px;
+  }
+ .heroes_ranks div > span {
+    width: inherit;
+    display: inline-block;
+  }
+  .heroes_ranks.frac1 div:nth-child(1) div > span:first-child {
+    background-position: center -522px
+  }
+ .heroes_ranks.frac1 div:nth-child(2) div > span:first-child {
+    background-position: center -387px;
+  }
+ .heroes_ranks.frac1 div:nth-child(3) div > span:first-child {
+    background-position: center -252px;
+  }
+ .heroes_ranks.frac1 div:nth-child(4) div > span:first-child {
+    background-position: center -118px;
+  }
+ .heroes_ranks.frac1 div:nth-child(5) div > span:first-child {
+    background-position: center 22px;
+  }
+  .heroes_ranks div > span:first-child {
+    //height: 28px;
+    padding: 106px 0px 5px;
+    color: #fff;
+    font: 17px/24px Cambria, Georgia, "Times New Roman", Times, serif;
+    background: url(/images/icons/frac_icons-6.png) center top no-repeat;
+    overflow: hidden;
+  }
+  .heroes_ranks div > span:nth-child(2) {
+    height: 25px;
+    color: #ea8f13;
+    font: 20px/30px Arial;
+    text-shadow: 1px 1px 1px #000000;
+    overflow: hidden;
+  }
+  .heroes_ranks div > span:nth-child(4) {
+    height: 19px;
+    color: #9c9c9c;
+    font: 16px/12px Cambria, Georgia, "Times New Roman", Times, serif;
+    overflow: hidden;
+  }
+  .heroes_ranks div > span {
+    width: inherit;
+    display: inline-block;
+  }
+ 

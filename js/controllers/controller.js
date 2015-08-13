@@ -1,35 +1,50 @@
 //Controllers
-var app = angular.module('app',['ui.router']);
 
-/*
-app.config(['$urlRouterProvider', function($urlRouterProvider){
-  $urlRouterProvider
-  .when('/',{
-    templateUrl:'template/home.html',
-    controller : 'HomeCtrl'
-  })
-  .when('/player',{
-    templateUrl:'template/player.html',
-    controller : 'PlayerCtrl'
-  })  
-  .when('/registration',{
-    templateUrl:'template/registration.html',
-    controller : 'RegistrationCtrl'
-  })
-  .otherwise('/');
-  
-}]);
-*/
-
-
-app.controller('DemoCtrl', function($scope){
-  $scope.name = 'world';
-})
-
-app.controller('NewsListCtrl', ['$scope','$http', function($scope, $http){
-  $http.get('json/news.json').success(function(data, status, headers, config){
+//--NewsListCtrl--
+app.controller('NewsListCtrl', ['$scope', '$http', function ($scope, $http) {
+  $http.get('json/news.json').success(function (data) {
     $scope.news = data;
-  }).error(function(){
-    
+  }).error(function () {
+    console.log("Cannot find 'json/news.json'");
   });
 }]);
+
+//--Players Tree Ctrl--
+app.controller('PlayersTreeCtrl', ['$scope', function ($scope) {
+  $scope.title = "PlayersTreeCtrl";
+  console.log($scope.title);
+}]);
+
+
+//--Players Table Ctrl--
+app.controller('PlayersTableCtrl', ['$scope', '$http', function ($scope, $http) {
+  $http.get('json/players.json').success(function (data) {
+    $scope.players = data;
+  });
+  
+  $scope.sortField = undefined;
+  $scope.reverse = false;
+  
+  $scope.sort = function(fieldName){
+    if($scope.sortField === fieldName){
+      $scope.reverse = !$scope.reverse;
+    } else{
+      $scope.sortField = fieldName;
+      $scope.reverse = false;
+    }
+  }
+}]);
+
+
+
+//--RegistrationCtrl--
+app.controller('RegistrationCtrl', ['$scope', function ($scope) {
+  $scope.title = "RegistrationCtrl";
+  console.log($scope.title);
+}]);
+
+//--LandingPageCtrl--
+/*app.controller('RegistrationCtrl', ['$scope', function($scope){
+  $scope.title = "RegistrationCtrl";
+  console.log($scope.title);
+}]); */

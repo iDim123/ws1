@@ -1,0 +1,39 @@
+#player_table{
+  color: #ffffff;
+  input{
+    color: #000000;
+  }
+  table{
+    background-color: rgba(0, 0, 0, 0.4);
+    > thead > tr > th:nth-child(1){
+      color: #e8c35f;
+    }
+    a{
+      color: #e8c35f;
+    }
+    tbody > tr:hover{
+      background-color: rgba(0, 0, 0, 0.5);
+    }
+  }
+  > div:nth-child(1){
+    margin-bottom: 50px;
+  }
+  > div:nth-child(3){
+    margin-top: 5px;
+  }
+  ul{
+    list-style-type: none;
+    padding-left: 0;
+  }
+  .main_roster_filters{
+    font-family: fantasy;
+    font-size: 16px;
+    letter-spacing: 1px;
+  }
+  .main_roster_filters > li:nth-child(1) input {
+    width: 100%;
+  }
+  .main_roster_info{
+    margin-top: 50px;
+  }
+}

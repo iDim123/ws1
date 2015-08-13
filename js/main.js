@@ -1,6 +1,3 @@
-/*angular.module('app',['ui.router'])
-.config(['']);*/
-
 $(document).ready(function () {
   $('.carousel').carousel();
   
@@ -66,6 +63,35 @@ $(document).ready(function () {
 
         },
     };
-    appPage.initialize();
+    //appPage.initialize();
    
 });
+
+var app = angular.module('app',['ui.router']);
+
+app.config(['$stateProvider', '$urlRouterProvider', function ($stateProvider,   $urlRouterProvider) {
+
+  $urlRouterProvider.otherwise('/');
+  
+  $stateProvider
+        .state("home", {
+          url: "/",
+          templateUrl: 'templates/home.html',
+          controller : 'NewsListCtrl'
+        })       
+        .state("players_tree", {
+          url: "/players_tree",
+          templateUrl: 'templates/players_tree.html',
+          controller: 'PlayersTreeCtrl'
+        })
+        .state("players_table", {
+          url: "/players_table",
+          templateUrl: 'templates/players_table.html',
+          controller: 'PlayersTableCtrl'
+        })
+        .state("registration", {
+          url: "/registration",
+          templateUrl: 'templates/registration.html',
+          controller : 'RegistrationCtrl'
+        })
+}]);

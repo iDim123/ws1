@@ -1,3 +1,15 @@
+//Корректируем Bootstrap
+nav{
+  font-family: main-font;
+}
+.navbar{
+    border-radius: 0px;
+}
+.navbar-brand{
+    padding: 11px 15px;
+}
+
+
 .nav-sidebar {
   position: fixed;
   top: 50%;

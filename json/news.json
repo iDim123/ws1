@@ -1,19 +1,19 @@
 [
-    {
-     "image" : "images/icons/newsPage/BNS.png",
-     "headtext" : "Lorem ipsum dolor sit amet",
-     "contenttext" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam et aliquam ex. Maecenas tristique rutrum elit, sit amet tincidunt elit faucibus maximus. Etiam sagittis hendrerit nibh et vulputate. Maecenas bibendum ac est at vulputate. Sed convallis est eget sem rhoncus imperdiet. Curabitur molestie ipsum tellus, sed porta massa auctor quis. Proin molestie, ex eu laoreet tristique, purus velit sodales."
-    },{
-     "image" : "images/icons/newsPage/GW2.png",
-     "headtext" : "In fringilla elit felis",
-     "contenttext" : "In fringilla elit felis, vitae volutpat metus mollis et. Nam nisi ante, finibus non quam ut, faucibus feugiat nibh. Morbi at rutrum augue. Ut ultricies, massa in consectetur elementum, libero velit pulvinar risus, at sagittis est felis at dui. Donec hendrerit lorem augue, vitae fermentum urna volutpat accumsan. Integer sagittis libero tortor, at imperdiet lorem imperdiet sit amet. Curabitur quis cong."
-    },{
-     "image" : "images/icons/newsPage/AA.png",
-     "headtext" : "Cum sociis natoque penatibus",
-     "contenttext" : "Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Sed rutrum, arcu gravida varius rhoncus, ipsum massa elementum urna, ut hendrerit leo velit vel ante. Aliquam ultricies lobortis justo vitae venenatis. Cum sociis natoque penatibus et magnis."
-    },{
-     "image" : "images/icons/newsPage/Tera.png",
-     "headtext" : "Sed rutrum, arcu gravida varius rhoncus",
-     "contenttext" : "Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Sed rutrum, arcu gravida varius rhoncus, ipsum massa elementum urna, ut hendrerit leo velit vel ante. Aliquam ultricies lobortis justo vitae venenatis. Cum sociis natoque penatibus et magnis."
+  {
+    "image": "images/icons/newsPage/BNS.png",
+    "headtext": "Lorem ipsum dolor sit amet",
+    "contenttext": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam et aliquam ex. Maecenas tristique rutrum elit, sit amet tincidunt elit faucibus maximus. Etiam sagittis hendrerit nibh et vulputate. Maecenas bibendum ac est at vulputate. Sed convallis est eget sem rhoncus imperdiet. Curabitur molestie ipsum tellus, sed porta massa auctor quis. Proin molestie, ex eu laoreet tristique, purus velit sodales."
+    }, {
+    "image": "images/icons/newsPage/GW2.png",
+    "headtext": "In fringilla elit felis",
+    "contenttext": "In fringilla elit felis, vitae volutpat metus mollis et. Nam nisi ante, finibus non quam ut, faucibus feugiat nibh. Morbi at rutrum augue. Ut ultricies, massa in consectetur elementum, libero velit pulvinar risus, at sagittis est felis at dui. Donec hendrerit lorem augue, vitae fermentum urna volutpat accumsan. Integer sagittis libero tortor, at imperdiet lorem imperdiet sit amet. Curabitur quis cong."
+    }, {
+    "image": "images/icons/newsPage/AA.png",
+    "headtext": "Cum sociis natoque penatibus",
+    "contenttext": "Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Sed rutrum, arcu gravida varius rhoncus, ipsum massa elementum urna, ut hendrerit leo velit vel ante. Aliquam ultricies lobortis justo vitae venenatis. Cum sociis natoque penatibus et magnis."
+    }, {
+    "image": "images/icons/newsPage/Tera.png",
+    "headtext": "Sed rutrum, arcu gravida varius rhoncus",
+    "contenttext": "Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Sed rutrum, arcu gravida varius rhoncus, ipsum massa elementum urna, ut hendrerit leo velit vel ante. Aliquam ultricies lobortis justo vitae venenatis. Cum sociis natoque penatibus et magnis."
     }
   ]
