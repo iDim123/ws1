@@ -9,24 +9,30 @@ module.exports = function(grunt){
               'bower_components/jquery/dist/jquery.min.js',
               'bower_components/bootstrap/dist/js/bootstrap.min.js',
               'bower_components/angular/angular.min.js',
-              'bower_components/angular-ui-router/release/angular-ui-router.min.js',
+              'bower_components/angular-route/angular-route.min.js',
               'node_modules/jquery-mousewheel/jquery.mousewheel.js'
           ],
-          dest: 'built/js/vendors.js'
+          dest: 'build/js/vendors.js'
       },
       js: {
-        src: ['js/main.js', 'js/controllers/*.js', 'js/directives/*.js', 'js/services/*.js'],
-        dest: 'built/js/scripts.js',
+        //src: ['js/main.js', 'js/controllers/*.js', 'js/directives/*.js', 'js/services/*.js'],
+        src: ['js/main.js', 
+              'js/modules.js', 
+              'js/configs.js', 
+              'js/**/*.js'],
+        dest: 'build/js/scripts.js',
       },
       move: {
-          src: ['bower_components/angularjs/angular.min.js.map'],
-          dest: 'built/js/angular.min.js.map'
+        files: [
+           {src: ['bower_components/angularjs/angular.min.js.map'],  dest: 'build/js/angular.min.js.map'},
+           {src: ['bower_components/angular-route/angular-route.min.js.map'],  dest: 'build/js/angular-route.min.js.map'}
+        ]
       },
     },
     sass: {    
       dist: {
         files: {                                            
-          'built/css/styles.css': 'css/main.scss'         
+          'build/css/styles.css': 'css/main.scss'         
         }
       }
     },

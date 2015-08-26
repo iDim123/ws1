@@ -1,5 +1,8 @@
 #player_table{
   color: #ffffff;
+  span{
+    color: #ffffff;
+  }
   input{
     color: #000000;
   }
@@ -16,7 +19,7 @@
     }
   }
   > div:nth-child(1){
-    margin-bottom: 50px;
+    //margin-bottom: 50px;
   }
   > div:nth-child(3){
     margin-top: 5px;
@@ -37,3 +40,4 @@
     margin-top: 50px;
   }
 }
+

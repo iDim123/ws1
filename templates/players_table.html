@@ -1,9 +1,15 @@
-<div class="container" id="player_table" ng-controller="PlayersTableCtrl">
-  <div class="row">
-    <div class="col-lg-12">
-       <h1>Список игроков</h1>
-      <!--<span>Список игроков</span>-->
-    </div>
+
+ <div class="container" id="player_table" ng-controller="PlayersTableCtrl">
+   <div class="row heroes_ranks_header">
+    <div class="col-lg-6 tree_header">
+      <span>Состав гильдии</span>
+    </div>  
+    <div class="col-lg-6 bottons_tree">
+        <div class="player-head tree-player">
+          <a href="#/players_tree">Древо рангов</a>
+          <a href="#/players_table">Таблица игроков</a>
+        </div>
+      </div>  
   </div>
   <div class="row">
     <div class="col-lg-2">
@@ -52,7 +58,7 @@
           </tr>
         </thead>
         <tbody>
-          <tr ng-repeat="player in players | orderBy:sortField:reverse">
+          <tr ng-repeat="player in players | orderBy:sortField:reverse | limitTo:10">
             <td>{{$index + 1}}</td>
             <td>{{player.nickname}}</td>
             <td>{{player.class}}</td>

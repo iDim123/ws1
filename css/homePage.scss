@@ -1,18 +1,38 @@
+//Цвета
+//Шапка
+$header_text_color: #efefef; //Цвет текста в шапке 
+$header_bg_color: rgba(97, 134, 153, 0.00); //Цвет блоков новостей 
+//Блоки
+$body_headerText_color: #eaeaea; //Цвет текста в шапке 
+$body_text_color: #ffffff; //Цвет текста в шапке 
+$body_bg_color: #72a1bf; //Цвет блоков новостей 
+$body_color_active: #00ffef;
+
+//Размеры 
+$wrap_width: 400px;
+
+//Шрифты
 @font-face {
+  font-family: main-font;         /* Гарнитура шрифта */
+  src: url(/fonts/T2LUHxYu.ttf);  /* Путь к файлу со шрифтом */
+}
+@import url(https://fonts.googleapis.com/css?family=Ubuntu+Mono:700&subset=latin,cyrillic);
+// Mixins
+@mixin font-properties{
   font-family: main-font;
-  /* Гарнитура шрифта */
-  src: url(/fonts/T2LUHxYu.ttf);
-  /* Путь к файлу со шрифтом */ }
+  color: $header_text_color;
+}
 
 
 body, html {
   height: 100%;
-  width: 100%; }
+  width: 100%; 
+}
 
 .mywrapper {
   height: 100%;
   overflow: hidden;
-  background: url(/images/background/b4.jpg) fixed no-repeat center;
+  background: #000000 url(/images/background/b4.jpg) fixed no-repeat center;
   background-size: 2000px; }
 
 .maincontent {
@@ -32,4 +52,93 @@ body, html {
 
 nav{
   z-index: 99;
+}
+
+.row{
+  position: relative;
+}
+
+.sidebar{
+  position: absolute;
+  right: 0;
+  top: 0;
+  color: aliceblue;
+  padding: 0 0 0 10px; 
+  margin: 10px 0 0 0px;
+  ul{
+    height: 630px;
+    padding: 20px 0 20px 20px;
+    background: linear-gradient(to bottom, rgba(116, 92, 68, 0.8), rgba(165, 148, 112, 0.5));
+    box-shadow: 4px 3px 3px rgb(7, 5, 3);
+  }
+  li{
+    font-size: 16px;
+  }
+}
+
+//Header Block
+.first-row {
+  position: relative;
+  height: 180px;
+}
+.header__text-main {
+  position: absolute;
+  top: 10px;
+  left: 50px;
+  @include font-properties;
+}
+.header__text-subtext {
+  position: absolute;
+  top: 100px;
+  left: 70px;
+  @include font-properties;
+}
+.header__project-active {
+  position: relative;
+}
+.header__project_text {
+  position: absolute;
+  top: 120px;
+  left: 530px;
+  font-size: 35px;
+  font-family: 'Ubuntu Mono';
+  font-weight: 700;
+  color: #460000;
+}
+.header__project_img {
+  position: absolute;
+  top: 70px;
+  left: 780px;
+}
+@media only screen and (max-width: 550px) {
+  .header__text-main {
+    font-size: 20px;
+  }
+  .header__text-subtext {
+    font-size: 40px;
+  }
+}
+@media only screen and (min-width: 550px) {
+  .header__text-main {
+    font-size: 25px;
+  }
+  .header__text-subtext {
+    font-size: 40px;
+  }
+}
+@media only screen and (min-width: 970px) {
+  .header__text-main {
+    font-size: 30px;
+  }
+  .header__text-subtext {
+    font-size: 45px;
+  }
+}
+@media only screen and (min-width: 1170px) {
+  .header__text-main {
+    font-size: 35px;
+  }
+  .header__text-subtext {
+    font-size: 50px;
+  }
 }

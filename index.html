@@ -8,17 +8,20 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <link href="bower_components/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
-  <link href="built/css/styles.css" rel="stylesheet">
+  <link href="build/css/styles.css" rel="stylesheet">
   <link href='http://fonts.googleapis.com/css?family=Orbitron:700' rel='stylesheet' type='text/css'>
-
-  <script src="built/js/vendors.js"></script>
-  <script src="built/js/scripts.js"></script>
+  <link href='https://fonts.googleapis.com/css?family=Nunito:400,700' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Sigmar+One' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Tangerine">
+  
+  <script src="build/js/vendors.js"></script>
+  <script src="build/js/scripts.js"></script>
 </head>
 
 <body ng-app="app">
   <div class="mywrapper">
    <header ng-include="'templates/navigation.html'"></header>
-    <div class="nav-sidebar">
+<!--    <div class="nav-sidebar">
       <div class="myconteiner">
         <ul class="nav__list">
           <li class="nav__item mynav-active">
@@ -35,9 +38,9 @@
           </li>
         </ul>
       </div>
-    </div>
+    </div>-->
     <div class="maincontent">
-      <ui-view></ui-view>
+      <ng-view></ng-view>
     </div>
   </div>
 
