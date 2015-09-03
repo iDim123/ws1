@@ -1,0 +1,48 @@
+[{
+  "id": 1,
+  "Name": "База снабжения \"Морской Змей\"",
+  "LocationName": "Zone X",
+  "Hard": 5,
+  "BossCount": 4,
+  "Proggress": 3,
+  "PeopleNeed": 4,
+  "Lvl" : 45,
+  "TacticsDungeon": "ulr",
+  "VideoAllDungeon": "url",
+  "TimeNeed": 45,
+  "Image": "url",
+  "Bosses": [
+    {
+      "Position": 1,
+      "Name": "Boss 1",
+      "BossHealth" : 10000,
+      "Hard": 2,
+      "Killed": true,
+      "BossImage": "url",
+      "VideoBoss": "ulr"
+    }, {
+      "Position": 2,
+      "Name": "Boss 2",
+      "BossHealth" : 10000,
+      "Hard": 4,
+      "Killed": true,
+      "BossImage": "url",
+      "VideoBoss": "ulr"
+    }, {
+      "Position": 3,
+      "Name": "Boss 3",
+      "BossHealth" : 10000,
+      "Hard": 3,
+      "Killed": true,
+      "BossImage": "url",
+      "VideoBoss": "ulr"
+    }, {
+      "Position": 4,
+      "Name": "Boss 4",
+      "BossHealth" : 10000,
+      "Hard": 5,
+      "Kill": false,
+      "BossImage": "url",
+      "VideoBoss": "ulr"
+    }]
+}]

@@ -1,0 +1,99 @@
+//Корректируем Bootstrap
+
+nav{
+  font-family: main-font;
+}
+.navbar{
+  border-radius: 0px;
+}
+.navbar-brand{
+  padding: 11px 15px;
+  font-size: 35px;
+  line-height: 30px;
+  text-shadow: 2px 2px 6px #000000;
+}
+.navbar-inverse{
+  @include bg-nav-linear-gradient;
+}
+.navbar-inverse .navbar-brand{
+  color: $header_text_color;
+}
+.navbar-inverse .navbar-nav>li>a {
+  color: $header_text_color;
+  text-shadow: 1px 1px 3px #000000;
+}
+#my-navigation{
+  li>a>.main-symvol{
+  font-size: 18px;
+  letter-spacing: 1px;
+  }
+}
+//Login
+.login_conteiner{
+  transition: top 1s;
+  //visibility: hidden;
+  z-index: 99;
+  position: absolute;
+  top: 51px;
+  //right: 5px;
+  right: 10%;
+  height: 163px;
+  width: 215px;
+  background-color: #212121;
+  padding: 8px 8px 2px 8px;
+  text-align: center;
+  border-top: 1px solid #8c6d53;
+  border-radius: 0 0 4px 4px;
+  span{
+    width: 100%;
+    font: 14px/14px main-font;
+    color: #ffffff;
+    margin: 2px;
+  }
+  input:focus{
+    box-shadow: inset 0px 0px 3px rgb(162, 49, 49);
+    border-color: rgb(162, 49, 49);
+  }
+  button{
+    font: 18px/20px main-font;
+    text-shadow: 1px 1px 1px #6a6757;
+    color: #313030;
+    background-color: #b9b292;
+    border-color: black;
+    letter-spacing: 1px;
+    padding: 4px 12px;
+    width: 100%;
+  }
+  button:hover{
+    background-color: lighten(#b9b292, 10%);
+  }
+  button:active{
+    background-color: lighten(#b9b292, 20%);
+  }
+  input, span, button{
+    height: 30px;
+    margin-top: 5px;
+  }
+  input:nth-child(4){
+    text-align: left;
+    position: absolute;
+    left: 12px;
+    height: 15px;
+  }
+   .remember {
+    font: 14px/15px arial;
+    height: 15px;
+    position: relative;
+    left: -41px;
+    top: 3px;
+  }
+  .main-symvol{
+    font-size: 18px;
+    //letter-spacing: 0.5px;
+  }
+}
+.hiddenLogin{
+  display: none!important;
+}
+.showLogin{
+}

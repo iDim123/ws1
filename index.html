@@ -2,12 +2,12 @@
 <html lang="en">
 
 <head>
-  <title>Document</title>
+  <title>Плохиши</title>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <link href="bower_components/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="build/css/bootstrap.min.css" rel="stylesheet">
   <link href="build/css/styles.css" rel="stylesheet">
   <link href='http://fonts.googleapis.com/css?family=Orbitron:700' rel='stylesheet' type='text/css'>
   <link href='https://fonts.googleapis.com/css?family=Nunito:400,700' rel='stylesheet' type='text/css'>
@@ -19,33 +19,14 @@
 </head>
 
 <body ng-app="app">
-  <div class="mywrapper">
-   <header ng-include="'templates/navigation.html'"></header>
-<!--    <div class="nav-sidebar">
-      <div class="myconteiner">
-        <ul class="nav__list">
-          <li class="nav__item mynav-active">
-            <a class="nav__item-link" href="#p1"></a>
-          </li>
-          <li class="nav__item">
-            <a class="nav__item-link" href="#p2"></a>
-          </li>
-          <li class="nav__item">
-            <a class="nav__item-link" href="#p3"></a>
-          </li>
-          <li class="nav__item">
-            <a class="nav__item-link" href="#p4"></a>
-          </li>
-        </ul>
-      </div>
-    </div>-->
+  <div class="main-wrapper">
+    <header ng-include="'templates/general/navigation.html'"></header>
     <div class="maincontent">
       <ng-view></ng-view>
     </div>
+    <div class="clearing"></div>
+    <footer ng-include="'templates/general/footer.html'"></footer>
   </div>
-
-
-  <!--<script src="js/controllers/controller.js"></script>-->
 </body>
 
 </html>

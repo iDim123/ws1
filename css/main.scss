@@ -1,8 +1,11 @@
-@import "homePage.scss";
-@import "navigation.scss";
-@import "homePageNews.scss";
-@import "regitration.scss";
-@import "login.scss";
+@import "home.scss";
+
+@import "general/footer.scss";
+@import "general/registration.scss";
+@import "general/navigation.scss";
+
+@import "achievements.scss";
 @import "playersTree.scss";
 @import "playersTable.scss";
-@import "homePageProjects.scss";
+@import "projects.scss";
+@import "playerDetail.scss";

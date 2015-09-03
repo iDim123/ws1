@@ -1,0 +1,119 @@
+//Цвета
+//Шапка
+/*$header_text_color: #222f36; //Цвет текста в шапке 
+$header_bg_color: rgba(97, 134, 153, 0.00); //Цвет блоков новостей 
+//Блоки
+$body_headerText_color: #eaeaea; //Цвет текста в шапке 
+$body_text_color: #ffffff; //Цвет текста в шапке 
+$body_bg_color: #72a1bf; //Цвет блоков новостей 
+$body_color_active: #00ffef;
+$footer_text_color: #e4e5e4; //Цвет текста 
+$footer_bg_color: #333333; //Цвет фона 
+$footer_bg_active_color: #00ffff;*/
+//Размеры 
+$wrap_width: 980px;
+//Шрифты
+@font-face {
+  font-family: main-font;
+  /* Гарнитура шрифта */
+  src: url(/fonts/T2LUHxYu.ttf);
+  /* Путь к файлу со шрифтом */
+}
+.section-4 {
+  /*width: 100%;
+    min-height: 100%;
+    height: auto !important;
+    height: 100%;
+    margin: 0 auto -4em;*/
+  .page__content__conteiner {
+    width: 100%;
+    min-height: 100%;
+    height: auto !important;
+    height: 100%;
+    margin: 0 auto -4em;
+  }
+  .page__content__conteiner:after {
+    content: ' ';
+    display: block;
+    height: 130px;
+    clear: both
+  }
+  .mypage-header {
+    width: 1100px;
+    margin: 0 auto;
+    height: 150px;
+    color: $body_headerText_color;
+    position: relative;
+    top: 0;
+    left: 50px;
+  }
+  .header__text {
+    position: absolute;
+    top: 70px;
+    left: 50px;
+    font-family: main-font;
+    font-size: 60px;
+  }
+  .small-item {
+    width: $wrap_width / 3 - 20px;
+  }
+  .page-content {
+    width: $wrap_width;
+    margin: 0 auto;
+    // width: 100%;
+    //display: none;
+  }
+  .content__item {
+    float: left;
+    margin: 10px 5px 0 5px;
+    @include bg-forms-linear-gradient;
+    //background: linear-gradient(to bottom, rgba(0, 70, 117, 0.6), rgba(147, 194, 210, 0.79));
+    //box-shadow: 4px 2px 3px #43545D;
+    box-shadow: 4px 2px 3px rgba(70, 56, 42, 0.9), 0 0 10px rgba(33, 26, 20, 0.9) inset;
+    //border: 2px solid rgba(0, 70, 117, 0.6);
+    position: relative;
+    height: 320px;
+    //width: 200px;
+    opacity: 0.8;
+    &:hover {
+      opacity: 1;
+      @include bg-nav-linear-gradient;
+      //background: linear-gradient(to bottom, rgba(0, 70, 117, 0.6), rgba(147, 194, 210, 1));
+    }
+  }
+  .content__img {
+    float: none;
+    margin-right: 8px;
+    width: 100%;
+    height: 150px;
+  }
+  .conteiner_project_img {
+    margin-top: 5px;
+    text-align: center;
+  }
+  .content_img_logo {
+    display: none;
+  }
+  .active__hover_img {
+    display: inline-block;
+  }
+  .content__head {
+    .head__text {
+      width: 100%;
+      background-color: #221911;
+      display: inline-block;
+      color: $body_headerText_color;
+      text-shadow: 3px 3px 2px #222f36;
+      font-size: 20px;
+      font-family: main-font;
+      line-height: 30px;
+      vertical-align: top;
+      text-align: center;
+    }
+  }
+  .content__body {
+    padding: 7px;
+    color: $body_text_color;
+  }
+  .content__text {}
+}

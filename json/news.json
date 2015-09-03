@@ -1,19 +1,33 @@
 [
   {
+    "date": "2015-04-10",
     "image": "images/icons/newsPage/BNS.png",
     "headtext": "Lorem ipsum dolor sit amet",
-    "contenttext": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam et aliquam ex. Maecenas tristique rutrum elit, sit amet tincidunt elit faucibus maximus. Etiam sagittis hendrerit nibh et vulputate. Maecenas bibendum ac est at vulputate. Sed convallis est eget sem rhoncus imperdiet. Curabitur molestie ipsum tellus, sed porta massa auctor quis. Proin molestie, ex eu laoreet tristique, purus velit sodales."
+    "contenttext": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam et aliquam ex. Maecenas tristique rutrum elit, sit amet tincidunt elit faucibus maximus. Etiam sagittis hendrerit nibh et vulputate. Maecenas bibendum ac est at vulputate. Sed convallis est eget sem rhoncus imperdiet. Curabitur molestie ipsum tellus, sed porta massa auctor quis. Proin molestie, ex eu laoreet tristique, purus velit sodales. Nam nisi ante, finibus non quam ut, faucibus feugiat nibh. Morbi at rutrum augue. Ut ultricies, massa in consectetur elementum, libero velit pulvinar risus Lorem ipsum dolor sit amet, consectetur adipiscing elit."
     }, {
+    "date": "2015-04-12",
     "image": "images/icons/newsPage/GW2.png",
     "headtext": "In fringilla elit felis",
-    "contenttext": "In fringilla elit felis, vitae volutpat metus mollis et. Nam nisi ante, finibus non quam ut, faucibus feugiat nibh. Morbi at rutrum augue. Ut ultricies, massa in consectetur elementum, libero velit pulvinar risus, at sagittis est felis at dui. Donec hendrerit lorem augue, vitae fermentum urna volutpat accumsan. Integer sagittis libero tortor, at imperdiet lorem imperdiet sit amet. Curabitur quis cong."
+    "contenttext": "In fringilla elit felis, vitae volutpat metus mollis et. Nam nisi ante, finibus non quam ut, faucibus feugiat nibh. Morbi at rutrum augue. Ut ultricies, massa in consectetur elementum, libero velit pulvinar risus, at sagittis est felis at dui. Donec hendrerit lorem augue, vitae fermentum urna volutpat accumsan. Integer sagittis libero tortor, at imperdiet lorem imperdiet sit amet. Curabitur quis cong. Nam nisi ante, finibus non quam ut, faucibus feugiat nibh. Morbi at rutrum augue. Ut ultricies, massa in consectetur elementum, libero velit pulvinar risus Lorem ipsum dolor sit amet, consectetur adipiscing elit."
     }, {
+    "date": "2015-04-14",
     "image": "images/icons/newsPage/AA.png",
     "headtext": "Cum sociis natoque penatibus",
-    "contenttext": "Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Sed rutrum, arcu gravida varius rhoncus, ipsum massa elementum urna, ut hendrerit leo velit vel ante. Aliquam ultricies lobortis justo vitae venenatis. Cum sociis natoque penatibus et magnis."
+    "contenttext": "Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Sed rutrum, arcu gravida varius rhoncus, ipsum massa elementum urna, ut hendrerit leo velit vel ante. Aliquam ultricies lobortis justo vitae venenatis. Cum sociis natoque penatibus et magnis. Sed rutrum, arcu gravida varius rhoncus, ipsum massa elementum urna, ut hendrerit leo velit vel ante. Aliquam ultricies lobortis justo vitae venenatis. Cum sociis natoque penatibus et magnis. Lorem ipsum dolor sit amet, consectetur adipiscing elit.Lorem ipsum dolor sit amet, consectetur adipiscing elit."
     }, {
+    "date": "2015-04-16",
     "image": "images/icons/newsPage/Tera.png",
     "headtext": "Sed rutrum, arcu gravida varius rhoncus",
-    "contenttext": "Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Sed rutrum, arcu gravida varius rhoncus, ipsum massa elementum urna, ut hendrerit leo velit vel ante. Aliquam ultricies lobortis justo vitae venenatis. Cum sociis natoque penatibus et magnis."
+    "contenttext": "Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Sed rutrum, arcu gravida varius rhoncus, ipsum massa elementum urna, ut hendrerit leo velit vel ante. Aliquam ultricies lobortis justo vitae venenatis. Cum sociis natoque penatibus et magnis. Aliquam ultricies lobortis justo vitae venenatis. Cum sociis natoque penatibus et magnis. Aliquam ultricies lobortis justo vitae venenatis. Cum sociis natoque penatibus et magnis.Lorem ipsum dolor sit amet, consectetur adipiscing elit.Lorem ipsum dolor sit amet, consectetur adipiscing elit.Lorem ipsum dolor sit amet, consectetur adipiscing elit.Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+    }, {
+    "date": "2015-04-18",
+    "image": "images/icons/newsPage/aa1.png",
+    "headtext": "Arcu gravida varius rhoncus",
+    "contenttext": "Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Sed rutrum, arcu gravida varius rhoncus, ipsum massa elementum urna, ut hendrerit leo velit vel ante. Aliquam ultricies lobortis justo vitae venenatis. Cum sociis natoque penatibus et magnis. Aliquam ultricies lobortis justo vitae venenatis. Cum sociis natoque penatibus et magnis. Aliquam ultricies lobortis justo vitae venenatis. Cum sociis natoque penatibus et magnis.Lorem ipsum dolor sit amet, consectetur adipiscing elit.Lorem ipsum dolor sit amet, consectetur adipiscing elit.Lorem ipsum dolor sit amet, consectetur adipiscing elit.Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+    }, {
+    "date": "2015-04-20",
+    "image": "images/icons/newsPage/aa2.png",
+    "headtext": "Arcu",
+    "contenttext": "Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Sed rutrum, arcu gravida varius rhoncus, ipsum massa elementum urna, ut hendrerit leo velit vel ante. Aliquam ultricies lobortis justo vitae venenatis. Cum sociis natoque penatibus et magnis. Aliquam ultricies lobortis justo vitae venenatis. Cum sociis natoque penatibus et magnis. Aliquam ultricies lobortis justo vitae venenatis. Cum sociis natoque penatibus et magnis.Lorem ipsum dolor sit amet, consectetur adipiscing elit.Lorem ipsum dolor sit amet, consectetur adipiscing elit.Lorem ipsum dolor sit amet, consectetur adipiscing elit.Lorem ipsum dolor sit amet, consectetur adipiscing elit."
     }
   ]

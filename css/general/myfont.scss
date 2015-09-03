@@ -1,0 +1,48 @@
+@font-face {
+  font-family: Eva-font;             /* Гарнитура шрифта */
+  src: url(/fonts/Eva-Regular.ttf);  /* Путь к файлу со шрифтом */
+}
+@font-face {
+  font-family: main-font;         /* Гарнитура шрифта */
+  src: url(/fonts/T2LUHxYu.ttf);  /* Путь к файлу со шрифтом */
+} 
+@import url(https://fonts.googleapis.com/css?family=Ubuntu+Mono:700&subset=latin,cyrillic);
+
+
+// Mixins
+@mixin Eva_font{
+  font-family: Evafont;
+}
+@mixin bg-forms-linear-gradient{
+  background: linear-gradient(to bottom, rgba(116, 92, 68, 0.9), rgba(165, 148, 112, 0.6));
+}
+@mixin bg-nav-linear-gradient{
+  background: linear-gradient(to bottom, rgb(116, 92, 68), rgba(165, 148, 112, 1));
+}
+@mixin bg-footer-linear-gradient{
+  background: linear-gradient(to bottom, rgb(74, 57, 40),rgb(132, 118, 89));
+}
+@mixin bg-active-tab-linear-gradient{
+  background: linear-gradient(to bottom, rgb(61, 40, 27), rgb(90, 61, 47));
+}
+@mixin font-properties{
+  font-family: main-font;
+  color: $header_text_color;
+}
+
+//
+$footer_bg_color: #333333;
+$footer_text_color: #ffffff;
+$footer_bg_active_color: #bf00e2;
+$wrap_width: 980px;
+$widthLi: 1120px;
+$header_text_color: #efefef; //Цвет текста в шапке 
+$header_bg_color: rgba(97, 134, 153, 0.00); //Цвет блоков новостей 
+//Блоки
+$body_headerText_color: #eaeaea; //Цвет текста в шапке 
+$body_text_color: #ffffff; //Цвет текста в шапке 
+$body_bg_color: #72a1bf; //Цвет блоков новостей 
+$body_color_active: #00ffef;
+
+
+

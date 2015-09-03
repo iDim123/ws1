@@ -1,17 +1,16 @@
-
- <div class="container" id="player_table" ng-controller="PlayersTableCtrl">
-   <div class="row heroes_ranks_header">
+<div class="container" id="player_table" ng-controller="PlayersTableCtrl">
+  <div class="row heroes_ranks_header">
     <div class="col-lg-6 tree_header">
       <span>Состав гильдии</span>
-    </div>  
+    </div>
     <div class="col-lg-6 bottons_tree">
-        <div class="player-head tree-player">
-          <a href="#/players_tree">Древо рангов</a>
-          <a href="#/players_table">Таблица игроков</a>
-        </div>
-      </div>  
+      <div class="player-head tree-player">
+        <a href="#/players_tree">Древо рангов</a>
+        <a href="#/players_table">Таблица игроков</a>
+      </div>
+    </div>
   </div>
-  <div class="row">
+  <!--  <div class="row">
     <div class="col-lg-2">
       <span><b>Фильтры:</b></span>
     </div>
@@ -22,51 +21,88 @@
       <span>Пред.</span>
       <span>След.</span>
     </div>
-  </div>
+  </div>-->
   <div class="row">
     <div class="col-lg-2 hidden-sm hidden-xs">
       <ul class="main_roster_filters">
         <li>
-          <input type="text">
-        </li> 
+          <input type="text" ng-model="filterPlayer">
+        </li>
         <li>Танки</li>
         <li>ДД</li>
         <li>Хил</li>
-        <li>Сапорт</li>
+        <!--<li>Сапорт</li>-->
       </ul>
       <ul class="main_roster_info">
-        <li><b>Общая информация:</b></li> 
-        <li>Общий состав - 11</li>
-        <li>Танков - 2</li>
-        <li>Ддшников - 7</li>
-        <li>Хилов - 2</li>
-        <li>Сапортов - 0</li>
+        <li><b>Общая информация:</b></li>
+        <li>Общий состав - {{items.length}}</li>
+        <li>Танков - {{countPlayersRoles(items, "Танк")}}</li>
+        <li>Ддшников - {{countPlayersRoles(items, "ДД")}}</li>
+        <li>Хилов - {{countPlayersRoles(items, "Хил")}}</li>
+        <!--<li>Сапортов - 0</li>-->
       </ul>
     </div>
     <div class="col-lg-10">
       <table class="table">
         <thead>
           <tr>
+            <!-- <th>ID</th>
+            <th><a href="" ng-click="sort('NickName')">Ник</a></th>
+            <th><a href="" ng-click="sort('Class')">Класс</a></th>
+            <th><a href="" ng-click="sort('Specialization')">Роль</a></th>
+            <th><a href="" ng-click="sort('Lvl')">Ур.</a></th>
+            <th><a href="" ng-click="sort('GuildRang')">Ранг</a></th>
+            <th><a href="" ng-click="sort('Itemslvl')">Ур. предметов</a></th>
+            <th><a href="" ng-click="sort('Achivements')">Достижения</a></th>-->
             <th>ID</th>
-            <th><a href="" ng-click="sort('nickname')">Ник</a></th>
-            <th><a href="" ng-click="sort('class')">Класс</a></th>
-            <th><a href="" ng-click="sort('specialization')">Роль</a></th>
-            <th><a href="" ng-click="sort('lvl')">Ур.</a></th>
-            <th><a href="" ng-click="sort('rang')">Ранг</a></th>
-            <th><a href="" ng-click="sort('itemslvl')">Ур. предметов</a></th>
-            <th><a href="" ng-click="sort('achivpoints')">Достижения</a></th>
+            <th class="NickName" custom-sort order="'NickName'" sort="sort">Ник&nbsp;</th>
+            <th class="Class" custom-sort order="'Class'" sort="sort">Класс&nbsp;</th>
+            <th class="Specialization" custom-sort order="'Specialization'" sort="sort">Роль&nbsp;</th>
+            <th class="Lvl" custom-sort order="'Lvl'" sort="sort">Ур.&nbsp;</th>
+            <th class="GuildRang" custom-sort order="'GuildRang'" sort="sort">Ранг&nbsp;</th>
+            <th class="Itemslvl" custom-sort order="'Itemslvl'" sort="sort">Ур. предметов&nbsp;</th>
+            <th class="Achivements" custom-sort order="'Achivements'" sort="sort">Достижения&nbsp;</th>
           </tr>
         </thead>
+
+        <tfoot>
+          <td colspan="8">
+            <div class="pagination pull-right">
+              <ul>
+                <li ng-class="{disabled: currentPage == 0}">
+                  <a href ng-click="prevPage()">« Пред.</a>
+                </li>
+                <li class="pages" ng-repeat="n in range(pagedItems.length, currentPage, currentPage + gap) " ng-class="{active: n == currentPage}" ng-click="setPage()">
+                  <a href ng-bind="n + 1">1</a>
+                </li>
+                <li ng-class="{disabled: (currentPage) == pagedItems.length - 1}">
+                  <a href ng-click="nextPage()">След. »</a>
+                </li>
+              </ul>
+            </div>
+          </td>
+        </tfoot>
+
         <tbody>
-          <tr ng-repeat="player in players | orderBy:sortField:reverse | limitTo:10">
-            <td>{{$index + 1}}</td>
-            <td>{{player.nickname}}</td>
-            <td>{{player.class}}</td>
-            <td>{{player.specialization}}</td>
-            <td>{{player.lvl}}</td>
-            <td>{{player.rang}}</td>
-            <td>{{player.itemslvl}}</td>
-            <td>{{player.achivpoints}}</td>
+          <!--   <tr ng-repeat="player in players | orderBy:sortField:reverse | limitTo:35">-->
+          <tr ng-repeat="item in pagedItems[currentPage] | orderBy:sort.sortingOrder:sort.reverse | filter: filterPlayer">
+            <!--  <td>{{$index + 1}}</td>
+            <td><a href="#/players_table/{{player.Id}}">{{player.NickName}}</a></td>
+            <td>{{player.Id}}</td>
+            <td>{{player.Class}}</td>
+            <td>{{player.Specialization}}</td>
+            <td>{{player.Lvl}}</td>
+            <td>{{player.GuildRang}}</td>
+            <td>{{player.Itemslvl}}</td>
+            <td>{{player.Achivements}}</td>-->
+            <td>{{item.Id}}</td>
+            <td>{{item.NickName}}</td>
+            <td>{{item.Class}}</td>
+            <td>{{item.Specialization}}</td>
+            <td>{{item.Lvl}}</td>
+            <td>{{item.GuildRang}}</td>
+            <td>{{item.Itemslvl}}</td>
+            <td>{{item.Achivements}}</td>
           </tr>
         </tbody>
       </table>

@@ -6,6 +6,7 @@
 }
 
 .heroes_ranks_header{
+  margin-top: 73px;
   height: 100px;
 }
 .players .row{
@@ -65,18 +66,15 @@
   .heroes_ranks > div:nth-child(4) > div {
     width: 260px;
   }
- .heroes_ranks > div:nth-child(5) > div {
-    width: 240px;
-    position: absolute;
-    top: 50px;
-    left: 120px;
-  }
  .heroes_ranks div > span {
     width: inherit;
     display: inline-block;
   }
   .heroes_ranks.frac1 div:nth-child(1) div > span:first-child {
     background-position: center -522px
+  }
+ .heroes_ranks.frac1 div:nth-child(1) div:nth-child(2) > span:first-child {
+    background-position: center 22px;
   }
  .heroes_ranks.frac1 div:nth-child(2) div > span:first-child {
     background-position: center -387px;
@@ -87,8 +85,12 @@
  .heroes_ranks.frac1 div:nth-child(4) div > span:first-child {
     background-position: center -118px;
   }
- .heroes_ranks.frac1 div:nth-child(5) div > span:first-child {
-    background-position: center 22px;
+
+  .heroes_ranks.frac1 div:nth-child(1) div:nth-child(2) {
+    position: absolute;
+    width: 240px;
+    top: 8%;
+    left: 13%;
   }
   .heroes_ranks div > span:first-child {
     //height: 28px;

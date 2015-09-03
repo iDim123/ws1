@@ -1,34 +1,45 @@
-#player_table{
+#player_table {
   color: #ffffff;
-  span{
-    color: #ffffff;
+  i {
+    color: aliceblue;
   }
-  input{
+  span {
+    color: #e8c35f;
+    //color: #ffffff;
+  }
+  input {
     color: #000000;
   }
-  table{
-    background-color: rgba(0, 0, 0, 0.4);
-    > thead > tr > th:nth-child(1){
+  table {
+    //background-color: rgba(0, 0, 0, 0.4);
+    
+    > thead > tr > th:nth-child(1) {
       color: #e8c35f;
     }
-    a{
+    a {
       color: #e8c35f;
     }
-    tbody > tr:hover{
+    thead{
+      background-color: rgba(0, 0, 0, 0.5);
+    }
+    tbody{
+      background-color: rgba(0, 0, 0, 0.4);
+    }
+    tbody > tr:hover {
       background-color: rgba(0, 0, 0, 0.5);
     }
   }
-  > div:nth-child(1){
+  > div:nth-child(1) {
     //margin-bottom: 50px;
   }
-  > div:nth-child(3){
+  > div:nth-child(3) {
     margin-top: 5px;
   }
-  ul{
+  ul {
     list-style-type: none;
     padding-left: 0;
   }
-  .main_roster_filters{
+  .main_roster_filters {
     font-family: fantasy;
     font-size: 16px;
     letter-spacing: 1px;
@@ -36,8 +47,36 @@
   .main_roster_filters > li:nth-child(1) input {
     width: 100%;
   }
-  .main_roster_info{
+  .main_roster_info {
     margin-top: 50px;
   }
+  .pagination {
+    .active{
+      background-color: #ff0000;
+    }
+    ul{
+      margin: 0;
+      padding: 0;
+    }
+    li {
+      margin: 0;
+      padding: 0;
+      display: inline-block;
+      text-align: center;
+    }
+    a{
+      width: 100%;
+    }
+  }
+  .pages {
+    width: 20px;
+    
+  }
+  tfoot{
+    div{
+       margin: 10px 0 0 0;
+      
+    }
+   
+  }
 }
-
