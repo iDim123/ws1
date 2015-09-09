@@ -1,113 +1,16 @@
-<section id="section2" class="page section-2" ng-controller="DungeonsTabsCtrl">
+<section id="section2" class="page section-2">
   <div class="container">
     <div class="row header-row">
       <div class="col-lg-12">
         <div class="header_text">Достижения</div>
       </div>
     </div>
-    <div class="tabs">
-      <ul>
-        <li ng-class="{active: active, disabled: disabled}">
-          <a href ng-click="select()">Уровни до 45</a>
-        </li>
-        <li class="active" ng-class="{active: active, disabled: disabled}">
-          <a href ng-click="select()">Уроень 45</a>
-        </li>
-        <li ng-class="{active: active, disabled: disabled}">
-          <a href ng-click="select()">Уровень 45+</a>
-        </li>
-        <li ng-class="{active: active, disabled: disabled}">
-          <a href ng-click="select()">Соло данжи</a>
-        </li>
-      </ul>
+     <div class="btn-group">
+        <label class="btn btn-success" ng-model="dungeonvalue" btn-radio="'lvl-45'">Уровни до 45</label>
+        <label class="btn btn-success" ng-model="dungeonvalue" btn-radio="'lvl45'">Уровень 45</label>
+        <label class="btn btn-success" ng-model="dungeonvalue" btn-radio="'lvl+45'">Уровень 45+</label>
+        <label class="btn btn-success" ng-model="dungeonvalue" btn-radio="'solo'">Соло данжи</label>
     </div>
-    <div class="tabs-content">
-      <!--   <dungeons-collection></dungeons-collection>
-      <dungeons-collection></dungeons-collection>
-      <dungeons-collection></dungeons-collection>
-      <dungeons-collection></dungeons-collection>-->
-      <div class="row dungeon_main-conteiner1">
-        <!--ng-repeat="dungeon in dungeons[tabNumber]">-->
-        <div class="dungeon_conteiner">
-          <div class="dungeon-header">База снабжения "Морской Змей"</div>
-          <div class="col-lg-6">
-            <span>Список боссов:</span>
-            <ul class="boss-names">
-              <li class="boss-name">
-                <div class="kill-chek killed"></div><span class="boss-name">Безжалостный король Рыб</span>
-                <a href="" class="kill-chek killed"></a>
-              </li>
-              <li class="boss-name">
-                <div class="kill-chek killed"></div><span class="boss-name">Ассасинка</span>
-                <a href="" class="kill-chek killed"></a>
-              </li>
-              <li class="boss-name">
-                <div class="kill-chek"></div><span class="boss-name">Маг Мак-Собо</span>
-                <a href="" class="kill-chek"></a>
-              </li>
-              <li class="boss-name">
-                <div class="kill-chek"></div><span class="boss-name">По Хваран</span>
-                <a href="" class="kill-chek"></a>
-              </li>
-            </ul>
-          </div>
-          <div class="col-lg-3">
-            <div class="center-info">
-              <span>Сложность</span>
-              <div>&#9733;&#9733;&#9733;&#9734;&#9734;</div>
-              <a href="">Тактика</a>
-              <span>Местонахождение</span>
-              <div></div>
-            </div>
-          </div>
-          <div class="col-lg-3">
-            <div class="round-chart">
-              <span>3/4</span>
-            </div>
-          </div>
-        </div>
-
-      </div>
-      <div class="row dungeon_main-conteiner2">
-        <div class="dungeon_conteiner">
-          <div class="dungeon-header">Акулья бухта</div>
-          <div class="col-lg-6">
-            <span>Список боссов:</span>
-            <ul class="boss-names">
-              <li class="boss-name">
-                <div class="kill-chek killed"></div><span class="boss-name">Ядовитый бес</span>
-                <a href="" class="kill-chek killed"></a>
-              </li>
-              <li class="boss-name">
-                <div class="kill-chek killed"></div><span class="boss-name">Глава группы обеспечения войск Красный Дракон</span>
-                <a href="" class="kill-chek killed"></a>
-              </li>
-              <li class="boss-name">
-                <div class="kill-chek killed"></div><span class="boss-name">Чон Ран и Хон Ран</span>
-                <a href="" class="kill-chek killed"></a>
-              </li>
-              <li class="boss-name">
-                <div class="kill-chek"></div><span class="boss-name">Хе Мучин</span>
-                <a href="" class="kill-chek"></a>
-              </li>
-            </ul>
-          </div>
-          <div class="col-lg-3">
-            <div class="center-info">
-              <span>Сложность</span>
-              <div>&#9733;&#9733;&#9733;&#9733;&#9734;</div>
-              <a href="">Тактика</a>
-              <span>Местонахождение</span>
-              <div></div>
-            </div>
-          </div>
-          <div class="col-lg-3">
-            <div class="round-chart">
-              <span>3/4</span>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
+    <tabs-content></tabs-content>
   </div>
 </section>

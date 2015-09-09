@@ -1,12 +1,11 @@
 //Home Directives
 (function(Directives,undefined){
   
-  app.Modules.app.directive('dungeonsCollection', [function(){
+  app.Modules.app.directive('tabsContent', [function(){
     return{
       restrict: 'E',
-      //controller: ,
-      templateUrl: app.TemplatePath + "achivements/tabset.html",
-      link: function(scope, elm, attrs){
+      templateUrl: app.TemplatePath + "achivements/tabs.html",
+      link: function(scope, elment, attrs){
         console.log("Directive 2 achievements");
       }
     }

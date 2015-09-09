@@ -2,7 +2,7 @@
 (function (Controllers, undefined) {
 
   app.Modules.app.controller('NavigationCtrl', ['$scope',  function ($scope) {
-    console.log("Nav Controller");
+    //console.log("Nav Controller");
    
   }]);
 

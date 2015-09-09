@@ -16,22 +16,7 @@
     players.mylist(function (players) {
       $scope.items = players;
       
-   //$scope.dd = $scope.countPlayersRoles($scope.items, "ДД"); 
-    //});
 
-      /*    $scope.sortField = undefined;
-          $scope.reverse = false;
-
-          $scope.sort = function (fieldName) {
-            if ($scope.sortField === fieldName) {
-              $scope.reverse = !$scope.reverse;
-            } else {
-              $scope.sortField = fieldName;
-              $scope.reverse = false;
-            }
-          }*/
-
-      // init
   //$timeout(function () {
          
      
@@ -77,11 +62,11 @@
       // calculate page in place
       $scope.groupToPages = function () {
         $scope.pagedItems = [];
-
+        
         for (var i = 0; i < $scope.filteredItems.length; i++) {
           if (i % $scope.itemsPerPage === 0) {
             $scope.pagedItems[Math.floor(i / $scope.itemsPerPage)] = [$scope.filteredItems[i]];
-          } else {
+          } else { 
             $scope.pagedItems[Math.floor(i / $scope.itemsPerPage)].push($scope.filteredItems[i]);
           }
         }
@@ -90,7 +75,6 @@
       $scope.range = function (size, start, end) {
         var ret = [];
         //console.log(size, start, end);
-
         if (size < end) {
           end = size;
           start = size - $scope.gap;
@@ -123,96 +107,5 @@
  
     });
  }]);
- 
- /* app.Modules.app.controller('PaginationController', ['$scope', '$attrs', '$parse', '$interpolate',
-  function ($scope, $attrs, $parse, $interpolate) {
-      var self = this,
-        setNumPages = $attrs.numPages ? $parse($attrs.numPages).assign : angular.noop;
-
-      this.init = function (defaultItemsPerPage) {
-          if ($attrs.itemsPerPage) {
-              $scope.$parent.$watch($parse($attrs.itemsPerPage), function (value) {
-                  self.itemsPerPage = parseInt(value, 10);
-                  $scope.totalPages = self.calculateTotalPages();
-              });
-          } else {
-              this.itemsPerPage = defaultItemsPerPage;
-          }
-      };
-
-      this.noPrevious = function () {
-          return this.page === 1;
-      };
-      this.noNext = function () {
-          return this.page === $scope.totalPages;
-      };
-
-      this.isActive = function (page) {
-          return this.page === page;
-      };
-
-      this.calculateTotalPages = function () {
-          var totalPages = this.itemsPerPage < 1 ? 1 : Math.ceil($scope.totalItems / this.itemsPerPage);
-          return Math.max(totalPages || 0, 1);
-      };
-
-      this.getAttributeValue = function (attribute, defaultValue, interpolate) {
-          return angular.isDefined(attribute) ? (interpolate ? $interpolate(attribute)($scope.$parent) : $scope.$parent.$eval(attribute)) : defaultValue;
-      };
-
-      this.render = function () {
-          this.page = parseInt($scope.page, 10) || 1;
-          if (this.page > 0 && this.page <= $scope.totalPages) {
-              $scope.pages = this.getPages(this.page, $scope.totalPages);
-          }
-      };
-
-      $scope.selectPage = function (page) {
-          if (!self.isActive(page) && page > 0 && page <= $scope.totalPages) {
-              $scope.page = page;
-              $scope.onSelectPage({
-                  page: page
-              });
-          }
-      };
-
-      $scope.$watch('page', function () {
-          self.render();
-      });
-
-      $scope.$watch('totalItems', function () {
-          $scope.totalPages = self.calculateTotalPages();
-      });
-
-      $scope.$watch('totalPages', function (value) {
-          setNumPages($scope.$parent, value); // Readonly variable
-
-          if (self.page > value) {
-              $scope.selectPage(value);
-          } else {
-              self.render();
-          }
-      });
-  }
-]);
-  
-   app.Modules.app.constant('paginationConfig', {
-    itemsPerPage: 10,
-    boundaryLinks: false,
-    directionLinks: true,
-    firstText: 'First',
-    previousText: 'Previous',
-    nextText: 'Next',
-    lastText: 'Last',
-    rotate: true
-     
-});
-   app.Modules.app.constant('pagerConfig', {
-    itemsPerPage: 10,
-    previousText: 'Â« Previous',
-    nextText: 'Next Â»',
-    align: true
-});
-  */
   
 }(app.Controllers = app.Controllers || {}));

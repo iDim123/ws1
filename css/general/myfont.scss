@@ -5,7 +5,12 @@
 @font-face {
   font-family: main-font;         /* Гарнитура шрифта */
   src: url(/fonts/T2LUHxYu.ttf);  /* Путь к файлу со шрифтом */
-} 
+}
+@font-face {
+  font-family: Sylfaen-font;  
+  src: url(/fonts/SYLFAEN.ttf);  
+}
+
 @import url(https://fonts.googleapis.com/css?family=Ubuntu+Mono:700&subset=latin,cyrillic);
 
 
@@ -22,8 +27,14 @@
 @mixin bg-footer-linear-gradient{
   background: linear-gradient(to bottom, rgb(74, 57, 40),rgb(132, 118, 89));
 }
-@mixin bg-active-tab-linear-gradient{
-  background: linear-gradient(to bottom, rgb(61, 40, 27), rgb(90, 61, 47));
+@mixin bg-acivementsTab-linear-gradient{
+  background: linear-gradient(to bottom, rgb(83, 65, 47), rgb(126, 113, 83));
+}
+@mixin bg-active-acivementsTab-linear-gradient{
+  background: linear-gradient(to bottom, rgb(53, 33, 19), rgb(85, 56, 42));
+}
+@mixin bg-sidebar-header-linear-gradient{
+  background: linear-gradient(to bottom, rgb(75, 57, 40), rgb(86, 67, 50));
 }
 @mixin font-properties{
   font-family: main-font;

@@ -1,0 +1,34 @@
+<div id="contact_page">
+  <div class="container">
+    <br>
+    <br>
+    <br>
+    <h1>Общаемся с разработчиками</h1>
+    <h6>Пока нет</h6>
+    <div class="contact_container">
+      <form name="contactForm" validation>
+        <div ng-hide="formError()"></div>
+        <div class="row">
+          <div class="col-xs-5">
+            <input class="form-control" type="text" name="name" ng-model="contactData.name" placeholder="Имя" ng-minlength="3" required/>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-xs-5">
+            <input class="form-control" type="text" name="email" ng-model="contactData.email" placeholder="Email" ng-minlength="3"/>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-xs-5">
+            <textarea class="form-control" id="input_message" name="message" ng-model="contactData.message" rows="4" placeholder="Сообщение" />
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-xs-5">
+            <input type="submit" class="btn btn-disable" name="name" ng-model="contactData.name" placeholder="Имя" ng-minlength="3" required/>
+          </div>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>

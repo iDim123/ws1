@@ -7,13 +7,16 @@
       controller: 'HomeCtrl'
     }) 
     .when('/achievements',{
-      templateUrl: app.TemplatePath + 'achivements/achievements.html'  
+      templateUrl: app.TemplatePath + 'achivements/achievements.html', 
+      controller: 'DungeonsTabsCtrl'
     })
     .when('/gallery',{
-      templateUrl: app.TemplatePath + '/gallery.html'  
+      templateUrl: app.TemplatePath + '/gallery.html', 
+      controller: 'GalleryCtrl'
     })
     .when('/projects',{
-      templateUrl: app.TemplatePath + '/projects.html' 
+      templateUrl: app.TemplatePath + '/projects.html', 
+      controller: 'ProjectsCtrl'
     })
     .when('/players_tree',{
       templateUrl: app.TemplatePath + '/players_tree.html'  
@@ -23,6 +26,9 @@
     })
     .when('/registration',{
       templateUrl: app.TemplatePath + '/general/registration.html' 
+    })
+    .when('/contact',{
+      templateUrl: app.TemplatePath + '/general/contact.html' 
     })
     .when('/players_table/:playerId',{
       templateUrl: app.TemplatePath + '/player-detail.html',  

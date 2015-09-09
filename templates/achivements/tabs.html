@@ -1,0 +1,48 @@
+<div class="tabs-content">
+  <div class="dungeon_main-conteiner col-width" ng-repeat="dungeon in dungeons | dungeonFilter:dungeonvalue" ng-style="{'background-image':dungeon.Image}">
+    <div class="dungeon_conteiner">
+      <div class="d-col-artifact">
+        <div class="dungeon_collection_img">
+          <img ng-src="{{dungeon.ArtifactImage}}" alt="{{dungeon.Name}}">
+        </div>
+      </div>
+      <div class="d-col-bosses" ng-click="showAll($event)">
+        <div class="dungeon-header">{{dungeon.Name}}</div>
+        <table>
+          <thead>
+            <tr>
+              <td colspan="3"><span>Список боссов:</span></td>
+            </tr>
+          </thead>
+          <tbody>
+            <tr class="boss-name" ng-repeat="boss in dungeon.Bosses">
+              <td>
+                <div class="kill-chek" ng-class="{killed : boss.Killed}"></div>
+              </td>
+              <td><span class="boss-name">{{boss.Name}}</span></td>
+              <td>
+                <a href="" class="kill-chek" ng-class="{killed : boss.Killed}"></a>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="d-col-info">
+        <div class="center-info">
+          <span>Сложность:</span>
+          <div ng-bind-html="dungeon.Hard | hardStar | html"></div>
+          <a href="{{dungeon.TacticsDungeon}}">Тактика</a>
+          <br>
+          <span>Местонахождение</span>
+          <div class="dundgeon_map" ng-style="{'background-image':dungeon.LittleMapImg}"></div>
+        </div>
+      </div>
+      <div class="d-col-icon">
+        <div class="round-chart">
+               <span ng-class="dungeonComplete(dungeon.Proggress,dungeon.Bosses.length)">{{dungeon.Proggress}}/{{dungeon.Bosses.length}}</span>
+          <span ng-class="dungeonComplete(ProggressCalc(dungeon),dungeon.Bosses.length)">{{ProggressCalc(dungeon)}}/{{dungeon.Bosses.length}}</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

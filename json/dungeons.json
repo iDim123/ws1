@@ -1,20 +1,21 @@
 [{
-  "id": 1,
+  "id": "d1",
   "Name": "База снабжения \"Морской Змей\"",
   "LocationName": "Zone X",
+  "LocationImg": "url(images/icons/achivements/dungeons/d5m.png)",
+  "LittleMapImg": "url(images/icons/achivements/dungeons/d5m.png)",
   "Hard": 5,
-  "BossCount": 4,
-  "Proggress": 3,
   "PeopleNeed": 4,
   "Lvl" : 45,
-  "TacticsDungeon": "ulr",
+  "TacticsDungeon": "",
   "VideoAllDungeon": "url",
   "TimeNeed": 45,
-  "Image": "url",
+  "Image": "url(images/icons/achivements/dungeons/d1.jpg)",
+  "ArtifactImage": "images/icons/achivements/dungeons/d1a.png",
   "Bosses": [
     {
       "Position": 1,
-      "Name": "Boss 1",
+      "Name": "Безжалостный король Рыб",
       "BossHealth" : 10000,
       "Hard": 2,
       "Killed": true,
@@ -22,7 +23,7 @@
       "VideoBoss": "ulr"
     }, {
       "Position": 2,
-      "Name": "Boss 2",
+      "Name": "Ассасинка",
       "BossHealth" : 10000,
       "Hard": 4,
       "Killed": true,
@@ -30,7 +31,7 @@
       "VideoBoss": "ulr"
     }, {
       "Position": 3,
-      "Name": "Boss 3",
+      "Name": "Маг Мак-Собо",
       "BossHealth" : 10000,
       "Hard": 3,
       "Killed": true,
@@ -38,10 +39,642 @@
       "VideoBoss": "ulr"
     }, {
       "Position": 4,
-      "Name": "Boss 4",
+      "Name": "По Хваран",
       "BossHealth" : 10000,
       "Hard": 5,
-      "Kill": false,
+      "Killed": true,
+      "BossImage": "url",
+      "VideoBoss": "ulr"
+    }]
+},{
+  "id": "d2",
+  "Name": "Акулья бухта",
+  "LocationName": "Zone X",
+  "LocationImg": "url(images/icons/achivements/dungeons/d5m.png)",
+  "LittleMapImg": "url(images/icons/achivements/dungeons/d5m.png)",
+  "Hard": 3,
+  "PeopleNeed": 4,
+  "Lvl" : 45,
+  "TacticsDungeon": "",
+  "VideoAllDungeon": "url",
+  "TimeNeed": 45,
+  "Image": "url(images/icons/achivements/dungeons/d2.jpg)",
+  "ArtifactImage": "images/icons/achivements/dungeons/d2a.png",
+  "Bosses": [
+    {
+      "Position": 1,
+      "Name": "Ядовитый бес",
+      "BossHealth" : 10000,
+      "Hard": 2,
+      "Killed": true,
+      "BossImage": "url",
+      "VideoBoss": "ulr"
+    }, {
+      "Position": 2,
+      "Name": "Глава группы обеспечения войск Красный Дракон",
+      "BossHealth" : 10000,
+      "Hard": 4,
+      "Killed": true,
+      "BossImage": "url",
+      "VideoBoss": "ulr"
+    }, {
+      "Position": 3,
+      "Name": "Чон Ран и Хон Ран",
+      "BossHealth" : 10000,
+      "Hard": 3,
+      "Killed": true,
+      "BossImage": "url",
+      "VideoBoss": "ulr"
+    }, {
+      "Position": 4,
+      "Name": "Хе Мучин",
+      "BossHealth" : 10000,
+      "Hard": 5,
+      "Killed": false,
+      "BossImage": "url",
+      "VideoBoss": "ulr"
+    }]
+},{
+  "id": "d3",
+  "Name": "Подземная арена",
+  "LocationName": "Zone X",
+  "LocationImg": "url(images/icons/achivements/dungeons/d5m.png)",
+  "LittleMapImg": "url(images/icons/achivements/dungeons/d5m.png)",
+  "Hard": 3,
+  "PeopleNeed": 1,
+  "Lvl" : 45,
+  "TacticsDungeon": "",
+  "VideoAllDungeon": "url",
+  "TimeNeed": 45,
+  "Image": "url(images/icons/achivements/dungeons/d3.jpg)",
+  "ArtifactImage": "images/icons/achivements/dungeons/d3a.png",
+  "Bosses": [
+    {
+      "Position": 1,
+      "Name": "Принц смерти",
+      "BossHealth" : 10000,
+      "Hard": 2,
+      "Killed": true,
+      "BossImage": "url",
+      "VideoBoss": "ulr"
+    }, {
+      "Position": 2,
+      "Name": "Бурый медведь",
+      "BossHealth" : 10000,
+      "Hard": 4,
+      "Killed": true,
+      "BossImage": "url",
+      "VideoBoss": "ulr"
+    }, {
+      "Position": 3,
+      "Name": "Скат",
+      "BossHealth" : 10000,
+      "Hard": 3,
+      "Killed": false,
+      "BossImage": "url",
+      "VideoBoss": "ulr"
+    }, {
+      "Position": 4,
+      "Name": "Холодная стужа",
+      "BossHealth" : 10000,
+      "Hard": 5,
+      "Killed": false,
+      "BossImage": "url",
+      "VideoBoss": "ulr"
+    }, {
+      "Position": 5,
+      "Name": "Король карелян",
+      "BossHealth" : 10000,
+      "Hard": 5,
+      "Killed": false,
+      "BossImage": "url",
+      "VideoBoss": "ulr"
+    }, {
+      "Position": 6,
+      "Name": "Мелан",
+      "BossHealth" : 10000,
+      "Hard": 5,
+      "Killed": false,
+      "BossImage": "url",
+      "VideoBoss": "ulr"
+    }, {
+      "Position": 7,
+      "Name": "Мастер",
+      "BossHealth" : 10000,
+      "Hard": 5,
+      "Killed": false,
+      "BossImage": "url",
+      "VideoBoss": "ulr"
+    }]
+},{
+  "id": "d4",
+  "Name": "Спиральный лабиринт",
+  "LocationName": "Zone X",
+  "LocationImg": "url(images/icons/achivements/dungeons/d5m.png)",
+  "LittleMapImg": "url(images/icons/achivements/dungeons/d5m.png)",
+  "Hard": 5,
+  "PeopleNeed": 4,
+  "Lvl" : 45,
+  "TacticsDungeon": "",
+  "VideoAllDungeon": "url",
+  "TimeNeed": 45,
+  "Image": "url(images/icons/achivements/dungeons/d4.jpg)",
+  "ArtifactImage": "images/icons/achivements/dungeons/d4a.png",
+  "Bosses": [
+    {
+      "Position": 1,
+      "Name": "Минотавр",
+      "BossHealth" : 10000,
+      "Hard": 2,
+      "Killed": true,
+      "BossImage": "url",
+      "VideoBoss": "ulr"
+    }, {
+      "Position": 2,
+      "Name": "Клоун Бейдо",
+      "BossHealth" : 10000,
+      "Hard": 4,
+      "Killed": false,
+      "BossImage": "url",
+      "VideoBoss": "ulr"
+    }, {
+      "Position": 3,
+      "Name": "Братья Молнии и Ветра",
+      "BossHealth" : 10000,
+      "Hard": 3,
+      "Killed": false,
+      "BossImage": "url",
+      "VideoBoss": "ulr"
+    }]
+},{
+  "id": "d5",
+  "Name": "ГеоГеоБунт",
+  "LocationName": "Zone X",
+  "LocationImg": "url(images/icons/achivements/dungeons/d5m.png)",
+  "LittleMapImg": "url(images/icons/achivements/dungeons/d5m.png)",
+  "Hard": 1,
+  "PeopleNeed": 4,
+  "Lvl" : 18,
+  "TacticsDungeon": "",
+  "VideoAllDungeon": "url",
+  "TimeNeed": 45,
+  "Image": "url(images/icons/achivements/dungeons/d5.jpg)",
+  "ArtifactImage": "images/icons/achivements/dungeons/d5a.png",
+  "Bosses": [
+    {
+      "Position": 1,
+      "Name": "Предводитель волков",
+      "BossHealth" : 10000,
+      "Hard": 2,
+      "Killed": true,
+      "BossImage": "url",
+      "VideoBoss": "ulr"
+    }, {
+      "Position": 2,
+      "Name": "Тройка смертников",
+      "BossHealth" : 10000,
+      "Hard": 4,
+      "Killed": true,
+      "BossImage": "url",
+      "VideoBoss": "ulr"
+    }, {
+      "Position": 3,
+      "Name": "Го Бун",
+      "BossHealth" : 10000,
+      "Hard": 3,
+      "Killed": true,
+      "BossImage": "url",
+      "VideoBoss": "ulr"
+    }]
+},{
+  "id": "d6",
+  "Name": "Огненное крыло",
+  "LocationName": "Zone X",
+  "LocationImg": "url(images/icons/achivements/dungeons/d5m.png)",
+  "LittleMapImg": "url(images/icons/achivements/dungeons/d5m.png)",
+  "Hard": 1,
+  "PeopleNeed": 4,
+  "Lvl" : 38,
+  "TacticsDungeon": "",
+  "VideoAllDungeon": "url",
+  "TimeNeed": 45,
+  "Image": "url(images/icons/achivements/dungeons/d6.jpg)",
+  "ArtifactImage": "images/icons/achivements/dungeons/d6a.png",
+  "Bosses": [
+    {
+      "Position": 1,
+      "Name": "Крылья свободы",
+      "BossHealth" : 10000,
+      "Hard": 2,
+      "Killed": true,
+      "BossImage": "url",
+      "VideoBoss": "ulr"
+    }, {
+      "Position": 2,
+      "Name": "Тайзер",
+      "BossHealth" : 10000,
+      "Hard": 4,
+      "Killed": true,
+      "BossImage": "url",
+      "VideoBoss": "ulr"
+    }, {
+      "Position": 3,
+      "Name": "Огненное крыло",
+      "BossHealth" : 10000,
+      "Hard": 3,
+      "Killed": true,
+      "BossImage": "url",
+      "VideoBoss": "ulr"
+    }]
+},{
+  "id": "d7",
+  "Name": "Прибрежная пещера",
+  "LocationName": "Zone X",
+  "LocationImg": "url(images/icons/achivements/dungeons/d5m.png)",
+  "LittleMapImg": "url(images/icons/achivements/dungeons/d5m.png)",
+  "Hard": 2,
+  "PeopleNeed": 1,
+  "Lvl" : 22,
+  "TacticsDungeon": "",
+  "VideoAllDungeon": "url",
+  "TimeNeed": 45,
+  "Image": "url(images/icons/achivements/dungeons/d7.jpg)",
+  "ArtifactImage": "images/icons/achivements/dungeons/d7a.png",
+  "Bosses": [
+    {
+      "Position": 1,
+      "Name": "Скат",
+      "BossHealth" : 10000,
+      "Hard": 2,
+      "Killed": true,
+      "BossImage": "url",
+      "VideoBoss": "ulr"
+    }]
+},{
+  "id": "d8",
+  "Name": "Ледяной склад",
+  "LocationName": "Zone X",
+  "LocationImg": "url(images/icons/achivements/dungeons/d5m.png)",
+  "LittleMapImg": "url(images/icons/achivements/dungeons/d5m.png)",
+  "Hard": 3,
+  "PeopleNeed": 1,
+  "Lvl" : 35,
+  "TacticsDungeon": "",
+  "VideoAllDungeon": "url",
+  "TimeNeed": 45,
+  "Image": "url(images/icons/achivements/dungeons/d8.jpg)",
+  "ArtifactImage": "images/icons/achivements/dungeons/d8a.png",
+  "Bosses": [
+    {
+      "Position": 1,
+      "Name": "Медуза",
+      "BossHealth" : 10000,
+      "Hard": 2,
+      "Killed": true,
+      "BossImage": "url",
+      "VideoBoss": "ulr"
+    }, {
+      "Position": 2,
+      "Name": "Снеговик",
+      "BossHealth" : 10000,
+      "Hard": 4,
+      "Killed": true,
+      "BossImage": "url",
+      "VideoBoss": "ulr"
+    }, {
+      "Position": 3,
+      "Name": "Морской король",
+      "BossHealth" : 10000,
+      "Hard": 3,
+      "Killed": false,
+      "BossImage": "url",
+      "VideoBoss": "ulr"
+    }]
+},{
+  "id": "d9",
+  "Name": "Тёмная Леди",
+  "LocationName": "Zone X",
+  "LocationImg": "url(images/icons/achivements/dungeons/d5m.png)",
+  "LittleMapImg": "url(images/icons/achivements/dungeons/d5m.png)",
+  "Hard": 3,
+  "PeopleNeed": 4,
+  "Lvl" : 25,
+  "TacticsDungeon": "",
+  "VideoAllDungeon": "url",
+  "TimeNeed": 45,
+  "Image": "url(images/icons/achivements/dungeons/d9.jpg)",
+  "ArtifactImage": "images/icons/achivements/dungeons/d9a.png",
+  "Bosses": [
+    {
+      "Position": 1,
+      "Name": "Главный помощник",
+      "BossHealth" : 10000,
+      "Hard": 2,
+      "Killed": true,
+      "BossImage": "url",
+      "VideoBoss": "ulr"
+    }, {
+      "Position": 2,
+      "Name": "Головорезы",
+      "BossHealth" : 10000,
+      "Hard": 4,
+      "Killed": true,
+      "BossImage": "url",
+      "VideoBoss": "ulr"
+    }, {
+      "Position": 3,
+      "Name": "Тёмная леди",
+      "BossHealth" : 10000,
+      "Hard": 3,
+      "Killed": true,
+      "BossImage": "url",
+      "VideoBoss": "ulr"
+    }]
+},{
+  "id": "d10 ",
+  "Name": "Ядро-гигант",
+  "LocationName": "Zone X",
+  "LocationImg": "url(images/icons/achivements/dungeons/d5m.png)",
+  "LittleMapImg": "url(images/icons/achivements/dungeons/d5m.png)",
+  "Hard": 2,
+  "PeopleNeed": 4,
+  "Lvl" : 33,
+  "TacticsDungeon": "",
+  "VideoAllDungeon": "url",
+  "TimeNeed": 45,
+  "Image": "url(images/icons/achivements/dungeons/d10.jpg)",
+  "ArtifactImage": "images/icons/achivements/dungeons/d10a.png",
+  "Bosses": [
+    {
+      "Position": 1,
+      "Name": "Ядро",
+      "BossHealth" : 10000,
+      "Hard": 2,
+      "Killed": true,
+      "BossImage": "url",
+      "VideoBoss": "ulr"
+    }]
+},{
+  "id": "d11",
+  "Name": "Подземные руины",
+  "LocationName": "Zone X",
+  "LocationImg": "url(images/icons/achivements/dungeons/d5m.png)",
+  "LittleMapImg": "url(images/icons/achivements/dungeons/d5m.png)",
+  "Hard": 5,
+  "PeopleNeed": 1,
+  "Lvl" : 50,
+  "TacticsDungeon": "",
+  "VideoAllDungeon": "url",
+  "TimeNeed": 45,
+  "Image": "url(images/icons/achivements/dungeons/d11.jpg)",
+  "ArtifactImage": "images/icons/achivements/dungeons/d11a.png",
+  "Bosses": [
+    {
+      "Position": 1,
+      "Name": "Разъяренные псы",
+      "BossHealth" : 10000,
+      "Hard": 2,
+      "Killed": false,
+      "BossImage": "url",
+      "VideoBoss": "ulr"
+    }, {
+      "Position": 2,
+      "Name": "Демонический генерал",
+      "BossHealth" : 10000,
+      "Hard": 4,
+      "Killed": false,
+      "BossImage": "url",
+      "VideoBoss": "ulr"
+    }]
+},{
+  "id": "d12",
+  "Name": "Зеленый рай",
+  "LocationName": "Zone X",
+  "LocationImg": "url(images/icons/achivements/dungeons/d5m.png)",
+  "LittleMapImg": "url(images/icons/achivements/dungeons/d5m.png)",
+  "Hard": 3,
+  "PeopleNeed": 4,
+  "Lvl" : 40,
+  "TacticsDungeon": "",
+  "VideoAllDungeon": "url",
+  "TimeNeed": 45,
+  "Image": "url(images/icons/achivements/dungeons/d12.jpg)",
+  "ArtifactImage": "images/icons/achivements/dungeons/d12a.png",
+  "Bosses": [
+    {
+      "Position": 1,
+      "Name": "Бригада обезьян",
+      "BossHealth" : 10000,
+      "Hard": 2,
+      "Killed": true,
+      "BossImage": "url",
+      "VideoBoss": "ulr"
+    }, {
+      "Position": 2,
+      "Name": "Небесная обезьяна",
+      "BossHealth" : 10000,
+      "Hard": 4,
+      "Killed": true,
+      "BossImage": "url",
+      "VideoBoss": "ulr"
+    }]
+},{
+  "id": "d13",
+  "Name": "Паучье гнездо",
+  "LocationName": "Zone X",
+  "LocationImg": "url(images/icons/achivements/dungeons/d5m.png)",
+  "LittleMapImg": "url(images/icons/achivements/dungeons/d5m.png)",
+  "Hard": 3,
+  "PeopleNeed": 4,
+  "Lvl" : 40,
+  "TacticsDungeon": "",
+  "VideoAllDungeon": "url",
+  "TimeNeed": 45,
+  "Image": "url(images/icons/achivements/dungeons/d13.jpg)",
+  "ArtifactImage": "images/icons/achivements/dungeons/d13a.png",
+  "Bosses": [
+    {
+      "Position": 1,
+      "Name": "Черная мать",
+      "BossHealth" : 10000,
+      "Hard": 2,
+      "Killed": true,
+      "BossImage": "url",
+      "VideoBoss": "ulr"
+    }, {
+      "Position": 2,
+      "Name": "Черная смерть",
+      "BossHealth" : 10000,
+      "Hard": 4,
+      "Killed": true,
+      "BossImage": "url",
+      "VideoBoss": "ulr"
+    }, {
+      "Position": 3,
+      "Name": "Черная вдова",
+      "BossHealth" : 10000,
+      "Hard": 3,
+      "Killed": true,
+      "BossImage": "url",
+      "VideoBoss": "ulr"
+    }]
+},{
+  "id": "d14",
+  "Name": "Угроза деревне рыбаков",
+  "LocationName": "Zone X",
+  "LocationImg": "url(images/icons/achivements/dungeons/d5m.png)",
+  "LittleMapImg": "url(images/icons/achivements/dungeons/d5m.png)",
+  "Hard": 1,
+  "PeopleNeed": 1,
+  "Lvl" : 18,
+  "TacticsDungeon": "",
+  "VideoAllDungeon": "url",
+  "TimeNeed": 45,
+  "Image": "url(images/icons/achivements/dungeons/d14.jpg)",
+  "ArtifactImage": "images/icons/achivements/dungeons/d14a.png",
+  "Bosses": [
+    {
+      "Position": 1,
+      "Name": "Скорпион",
+      "BossHealth" : 10000,
+      "Hard": 2,
+      "Killed": true,
+      "BossImage": "url",
+      "VideoBoss": "ulr"
+    }]
+},{
+  "id": "d15",
+  "Name": "Башня бога войны",
+  "LocationName": "Zone X",
+  "LocationImg": "url(images/icons/achivements/dungeons/d5m.png)",
+  "LittleMapImg": "url(images/icons/achivements/dungeons/d5m.png)",
+  "Hard": 5,
+  "PeopleNeed": 1,
+  "Lvl" : 45,
+  "TacticsDungeon": "",
+  "VideoAllDungeon": "url",
+  "TimeNeed": 45,
+  "Image": "url(images/icons/achivements/dungeons/d15.jpg)",
+  "ArtifactImage": "images/icons/achivements/dungeons/d15a.png",
+  "Bosses": [
+    {
+      "Position": 1,
+      "Name": "Мастер стихий",
+      "BossHealth" : 10000,
+      "Hard": 2,
+      "Killed": true,
+      "BossImage": "url",
+      "VideoBoss": "ulr"
+    }, {
+      "Position": 2,
+      "Name": "Великан",
+      "BossHealth" : 10000,
+      "Hard": 4,
+      "Killed": true,
+      "BossImage": "url",
+      "VideoBoss": "ulr"
+    }, {
+      "Position": 3,
+      "Name": "Банда разбойников",
+      "BossHealth" : 10000,
+      "Hard": 3,
+      "Killed": true,
+      "BossImage": "url",
+      "VideoBoss": "ulr"
+    }, {
+      "Position": 3,
+      "Name": "Гандзи",
+      "BossHealth" : 10000,
+      "Hard": 3,
+      "Killed": true,
+      "BossImage": "url",
+      "VideoBoss": "ulr"
+    }, {
+      "Position": 3,
+      "Name": "Голем",
+      "BossHealth" : 10000,
+      "Hard": 3,
+      "Killed": true,
+      "BossImage": "url",
+      "VideoBoss": "ulr"
+    }, {
+      "Position": 3,
+      "Name": "Великая четверка",
+      "BossHealth" : 10000,
+      "Hard": 3,
+      "Killed": true,
+      "BossImage": "url",
+      "VideoBoss": "ulr"
+    }, {
+      "Position": 3,
+      "Name": "Чон Хадо",
+      "BossHealth" : 10000,
+      "Hard": 3,
+      "Killed": true,
+      "BossImage": "url",
+      "VideoBoss": "ulr"
+    }, {
+      "Position": 3,
+      "Name": "Тень бога войны",
+      "BossHealth" : 10000,
+      "Hard": 3,
+      "Killed": true,
+      "BossImage": "url",
+      "VideoBoss": "ulr"
+    }]
+},{
+  "id": "d16",
+  "Name": "Древняя грбница",
+  "LocationName": "Zone X",
+  "LocationImg": "url(images/icons/achivements/dungeons/d5m.png)",
+  "LittleMapImg": "url(images/icons/achivements/dungeons/d5m.png)",
+  "Hard": 2,
+  "PeopleNeed": 4,
+  "Lvl" : 40,
+  "TacticsDungeon": "",
+  "VideoAllDungeon": "url",
+  "TimeNeed": 45,
+  "Image": "url(images/icons/achivements/dungeons/d16.jpg)",
+  "ArtifactImage": "images/icons/achivements/dungeons/d16a.png",
+  "Bosses": [
+    {
+      "Position": 1,
+      "Name": "Наемный разведчик",
+      "BossHealth" : 10000,
+      "Hard": 2,
+      "Killed": true,
+      "BossImage": "url",
+      "VideoBoss": "ulr"
+    }, {
+      "Position": 2,
+      "Name": "Скромный командир",
+      "BossHealth" : 10000,
+      "Hard": 4,
+      "Killed": true,
+      "BossImage": "url",
+      "VideoBoss": "ulr"
+    }, {
+      "Position": 3,
+      "Name": "Команда богов",
+      "BossHealth" : 10000,
+      "Hard": 3,
+      "Killed": true,
+      "BossImage": "url",
+      "VideoBoss": "ulr"
+    }, {
+      "Position": 4,
+      "Name": "Генерал",
+      "BossHealth" : 10000,
+      "Hard": 5,
+      "Killed": true,
+      "BossImage": "url",
+      "VideoBoss": "ulr"
+    }, {
+      "Position": 4,
+      "Name": "Даесунг",
+      "BossHealth" : 10000,
+      "Hard": 5,
+      "Killed": true,
       "BossImage": "url",
       "VideoBoss": "ulr"
     }]

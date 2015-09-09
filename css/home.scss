@@ -1,71 +1,176 @@
 @import "general/myfont.scss";
-
-body, html {
+body,
+html {
   height: 100%;
 }
-
-body{
+body {
   background: #000000 url(/images/background/b4.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-attachment: fixed;
-  background-size: cover; 
+  background-size: cover;
 }
-
 .main-wrapper {
   min-height: 100%;
   position: relative;
 }
-
 .maincontent {
-  height: 100%; 
+  height: 100%;
   transition: 1s;
- /* -moz-transition: top 1s;
-  -o-transition: top 1s;
-  -webkit-transition: top 1s;
-  transition: top 1s; */
 }
-
 .page {
   padding-top: 51px;
 }
-
-nav{
+nav {
   z-index: 99;
 }
-
-.row{
+.row {
   position: relative;
 }
-
-.sidebar{
-  position: absolute;
-  right: 0;
-  top: 74px;
-  color: $header_text_color;
-  padding: 0 0 0 10px; 
-  margin: 10px 0 0 0px;
-  ul{
-    height: 630px;
-    padding: 20px 0 20px 20px;
-    background: linear-gradient(to bottom, rgba(116, 92, 68, 0.8), rgba(165, 148, 112, 0.5));
+#section1 {
+  .sidebar {
+    margin-top: 20px;
+    float: right;
+    width: 210px;
+    color: #ffffff;
     box-shadow: 4px 3px 3px rgb(7, 5, 3);
   }
-  li{
+  .sidebar p {
+    padding-left: 10px;
+    font-size: 18px;
+    font-family: Sylfaen-font, arial;
+    height: 26px;
+    margin: 0 0 8px 0;
+    @include bg-sidebar-header-linear-gradient;
+  }
+  .voice-chats_conteiner {
+    @include bg-forms-linear-gradient;
     font-size: 16px;
+    font-family: Metrics;
+    ul {
+      list-style-type: none;
+      margin: 0 0 0 8px;
+      padding: 0;  
+    }
+    li {
+      height: 45px;
+    }
+    .voice-chat_sprite {
+      float: left;
+      width: 35px;
+      height: 35px;
+      margin: 5px 5px 0 0;
+      background-image: url(/images/icons/sprites/voise-prog.png);
+    }
+    .team-speak {
+      background-position: 0 0;
+    }
+    .mumble {
+      background-position: 0 -35px;
+    }
   }
-  a{
-    color: $header_text_color;
+  .server-status_conteiner {
+    height: 65px;
+    @include bg-forms-linear-gradient;
+    font-size: 16px;
+    font-family: Metrics;
+    span{
+      line-height: 24px;
+    }
+    .server-status_sprite {
+      float: left;
+      width: 25px;
+      height: 25px;
+      margin-right: 5px;
+      margin-left: 5px;
+      background-image: url(/images/icons/sprites/server-status.png);
+    }
   }
-}
-
-//Header Block
-.first-row {
-  //margin-top: 20px;
-  position: relative;
-  height: 300px;
-}
-.frame-img{
+  .guild-requirement_conteiner {
+    height: 156px;
+    @include bg-forms-linear-gradient;
+    ul {
+      list-style-type: none;
+      margin: 0 0 0 1px;
+      padding: 0;
+    }
+    li {
+      display: inline-block;
+    }
+    .class_sprite {
+      width: 48px;
+      height: 48px;
+      background-image: url(/images/icons/sprites/class-sprite.png);
+      background-position: 0 -5px;
+    }
+    .blade_master {
+      background-position: 0 -5px;
+    }
+    .destroyer {
+      background-position: 0 -65px;
+    }
+    .summoner {
+      background-position: 0 -125px;
+    }
+    .force_master {
+      background-position: 0 -185px;
+    }
+    .kung_fu_master {
+      background-position: 0 -245px;
+    }
+    .assasin {
+      background-position: 0 -305px;
+    }
+    .blade_dancer {
+      background-position: 0 -365px;
+    }
+  }
+  .useful-links_conteiner {
+    height: 156px;
+    @include bg-forms-linear-gradient;
+    ul {
+      margin: 0 0 0 10px;
+      padding: 0;
+      list-style-type: none;
+    }
+    a {
+      font-size: 16px;
+      font-family: Metrics;
+      color: #ffffff;
+    }
+  }
+  
+  
+  
+  .content_conteiner {
+    float: left;
+  }
+  @media only screen and (max-width: 550px) {
+    .col-width {
+      width: 100%;
+    }
+  }
+  @media only screen and (min-width: 550px) {
+    .col-width {
+      width: 100%;
+    }
+  }
+  @media only screen and (min-width: 970px) {
+    .col-width {
+      width: 710px;
+    }
+  }
+  @media only screen and (min-width: 1200px) {
+    .col-width {
+      width: 910px;
+    }
+  }
+  //Header Block
+  .first-row {
+    position: relative;
+    height: 300px;
+  }
+  .frame-img {
     text-align: center;
     width: 166px;
     height: 137px;
@@ -73,8 +178,8 @@ nav{
     background-position: -322px -173px;
     margin-top: 60px;
     position: relative;
-}
-.image-fraction{
+  }
+  .image-fraction {
     position: absolute;
     top: 11px;
     left: 28px;
@@ -83,122 +188,113 @@ nav{
     height: 125px;
     background-image: url(/images/icons/sprites.png);
     background-position: -10px -132px;
-}
-.image-main{
-  padding-top: 20px;
-  text-align: center;
-}
-.image-logo{
-  height: 100%;
-  text-align: center;
-  @include font-properties;
-  font-size: 33px;
-  line-height: 40px;
-  padding-top: 21px;
-  
-}
-.header__text-main {
-  position: relative;
-  top: 10px;
-  left: 50px;
-  @include font-properties;
-}
-
-@media only screen and (max-width: 550px) {
+  }
+  .image-main {
+    padding-top: 20px;
+    text-align: center;
+  }
+  .image-logo {
+    height: 100%;
+    text-align: center;
+    @include font-properties;
+    font-size: 33px;
+    line-height: 40px;
+    padding-top: 21px;
+  }
   .header__text-main {
-    font-size: 30px;
+    position: relative;
+    top: 10px;
+    left: 50px;
+    @include font-properties;
   }
-}
-@media only screen and (min-width: 550px) {
-  .header__text-main {
-    font-size: 35px;
+  @media only screen and (max-width: 550px) {
+    .header__text-main {
+      font-size: 30px;
+    }
   }
-}
-@media only screen and (min-width: 970px) {
-  .header__text-main {
-    font-size: 40px;
+  @media only screen and (min-width: 550px) {
+    .header__text-main {
+      font-size: 35px;
+    }
   }
-}
-@media only screen and (min-width: 1170px) {
-  .header__text-main {
-    font-size: 45px;
+  @media only screen and (min-width: 970px) {
+    .header__text-main {
+      font-size: 40px;
+    }
   }
-}
-
-
-
-
-//News Blocks
-.content__img {
-  float: left;
-  margin-right: 10px;
-  width: 110px;
-  height: 100px;
-}
-.conteiner_content_img {
-  margin-top: 5px;
-  text-align: center;
-  img {
-    float: left;
+  @media only screen and (min-width: 1170px) {
+    .header__text-main {
+      font-size: 45px;
+    }
   }
-}
-.myhead__text {
-  display: inline-block;
-  color: $body_headerText_color;
-  text-shadow: 3px 3px 2px #222f36;
-  font-size: 25px;
-  font-family: 'Ubuntu';
-  margin: 7px 0 0 10px;
-  line-height: 30px;
-  vertical-align: top;
-}
-.myhead__date{
-  position: absolute;
-  top: 5px;
-  right: 5px;
-  font: 14px/20px 'Orbitron';
-  color: darken($body_headerText_color, 20%);
-  white-space: nowrap;
-}
-.content__text {
-  //display: block;
-  height: 80px;
-  margin: 0;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  //white-space:nowrap;
-  //width: 800px;
-  font-family: 'Orbitron', sans-serif;
-}
-.conteiner_content_img {
-  float: left;
-  width: 155px;
-  text-align: center;
-}
-.test__conteiner {
-  position: relative;
-  background: linear-gradient(to bottom, rgba(116, 92, 68, 0.9), rgba(165, 148, 112, 0.6));
-  box-shadow: 4px 3px 3px rgb(7, 5, 3);
-  margin-top: 10px;
-  height: 150px;
-  button {
-    color: white;
+  //News Blocks
+  .content__img {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+  }
+  .conteiner_content_img {
+    padding: 3px;
+    img {
+      width: 100%;
+      float: left;
+    }
+  }
+  .myhead__text {
+    display: inline-block;
+    color: $body_headerText_color;
+    text-shadow: 3px 3px 2px #222f36;
+    font: 25px/25px Metrics;
+    margin: 7px 0 0 10px;
+    line-height: 30px;
+    vertical-align: top;
+  }
+  .myhead__date {
     position: absolute;
-    bottom: 0;
-    right: 10px;
+    top: 5px;
+    right: 5px;
+    font: 14px/20px Metrics;
+    color: #ffffff;
+    white-space: nowrap;
+  }
+  .content__text {
+    //display: block;
+    padding: 0 0 0 10px;
+    height: 80px;
+    margin: 0;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    font-family: 'Orbitron', sans-serif;
+  }
+  .conteiner_content_img {
+    float: left;
+    width: 155px;
+    height: 150px;
+    text-align: center;
+  }
+  .news__conteiner {
+    position: relative;
+    background: linear-gradient(to bottom, rgba(116, 92, 68, 0.9), rgba(165, 148, 112, 0.6));
+    box-shadow: 4px 3px 3px rgb(7, 5, 3);
+    margin-top: 20px;
+    height: 150px;
+    button {
+      color: white;
+      position: absolute;
+      bottom: 0;
+      right: 10px;
+    }
   }
 }
-
-.clearing{
+.clearing {
   margin-top: 50px;
   height: 100px;
 }
-
-.beta{
+.beta {
   position: fixed;
   top: 56px;
   left: 6px;
-  font: 30px/25px arial;
+  font: 24px/25px arial;
   color: red;
   z-index: 9999;
 }
