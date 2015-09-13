@@ -60,7 +60,7 @@ nav {
       width: 35px;
       height: 35px;
       margin: 5px 5px 0 0;
-      background-image: url(/images/icons/sprites/voise-prog.png);
+      background-image: url(/images/sprites/voise-prog.png);
     }
     .team-speak {
       background-position: 0 0;
@@ -83,7 +83,7 @@ nav {
       height: 25px;
       margin-right: 5px;
       margin-left: 5px;
-      background-image: url(/images/icons/sprites/server-status.png);
+      background-image: url(/images/sprites/server-status.png);
     }
   }
   .guild-requirement_conteiner {
@@ -100,7 +100,7 @@ nav {
     .class_sprite {
       width: 48px;
       height: 48px;
-      background-image: url(/images/icons/sprites/class-sprite.png);
+      background-image: url(/images/sprites/class-sprite.png);
       background-position: 0 -5px;
     }
     .blade_master {
@@ -174,7 +174,7 @@ nav {
     text-align: center;
     width: 166px;
     height: 137px;
-    background-image: url(/images/icons/sprites.png);
+    background-image: url(/images/sprites.png);
     background-position: -322px -173px;
     margin-top: 60px;
     position: relative;
@@ -186,7 +186,7 @@ nav {
     text-align: center;
     width: 105px;
     height: 125px;
-    background-image: url(/images/icons/sprites.png);
+    background-image: url(/images/sprites.png);
     background-position: -10px -132px;
   }
   .image-main {
@@ -297,4 +297,8 @@ nav {
   font: 24px/25px arial;
   color: red;
   z-index: 9999;
+}
+
+[ng\:cloak], [ng-cloak], .ng-cloak {
+  display: none;
 }

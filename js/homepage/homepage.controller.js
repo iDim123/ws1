@@ -7,7 +7,6 @@
 
   //News Controller for Home Page
   app.Modules.app.controller('NewsCtrl', ['$scope', '$http', function ($scope, $http) {
-    //console.log("Controller 1 News");
     $http.get('json/news.json').success(function (data) {
       $scope.news = data;
     }).error(function () {

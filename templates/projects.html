@@ -1,25 +1,31 @@
 <section id="section4" class="page section-4">
-  <div class="page__content__conteiner">
-    <div class="mypage-header">
-      <div class="header__text">
-        Проекты
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12 header-row">
+        <div class="header_text">
+          Проекты
+        </div>
       </div>
     </div>
     <div class="page-content">
-      <div class="content__item small-item" ng-repeat="project in projects">
-        <div class="content__img">
-         <div class="conteiner_project_img">
-            <img class="content_img_logo active__hover_img"  alt="logo" ng-src={{project.Image}} />
-            <img class="content_img_logo" alt="logo" ng-src={{project.ImageActive}} />
-        </div>
-        </div>
-        <div class="content__head">
-          <div class="head__text">
-            {{project.Name}}
-          </div>
-          <div class="content__body">
-            <div class="content__text">
-              <p>{{project.Description}}</p>
+      <div class="row">
+        <div class="col-lg-4" ng-repeat="project in projects">
+          <div class="project_container">
+            <div class="project-img">
+              <div class="conteiner_project_img">
+                <img class="content_img_logo active__hover_img" alt="logo" ng-src={{project.Image}} />
+                <img class="content_img_logo" alt="logo" ng-src={{project.ImageActive}} />
+              </div>
+            </div>
+            <div class="project-name">
+              <div class="head__text">
+                {{project.Name}}
+              </div>
+            </div>
+            <div class="project-body">
+              <div class="content__text">
+                <p>{{project.Description}}</p>
+              </div>
             </div>
           </div>
         </div>

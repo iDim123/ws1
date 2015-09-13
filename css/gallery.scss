@@ -1,5 +1,40 @@
-#section3{
-  ul, li {color: aliceblue;}
-  span{ color: aliceblue;
+#section3 {
+  position: relative;
+  ul,
+  li {
+    color: aliceblue;
+  }
+  .header-row {
+    height: 100px;
+  }
+ .header_text {
+    position: relative;
+    top: 20px;
+    left: 50px;
+    @include font-properties;
+    font-size: 45px;
+  }
+  .images_conteiner {
+    float: left;
+    min-width: 682px;
+    min-height: 100%;
+    img.ng-thumb {
+      margin: 0 10px 10px 0;
+      width: 330px;
+      border: 1px solid rgba(255, 255, 255, 0);
+      height: 200px;
+    }
+    img.ng-thumb:hover {
+      border: 1px solid #797979;
+    }
+  }
+  .video_container {
+    float: right;
+    min-height: 100%;
+    .game-video{
+      margin: 0 0 10px 0;
+      height: 263px;
+      width: 456px;
+    }
   }
 }

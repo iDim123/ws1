@@ -6,7 +6,6 @@
       restrict: 'E',
       templateUrl: app.TemplatePath + "achivements/tabs.html",
       link: function(scope, elment, attrs){
-        console.log("Directive 2 achievements");
       }
     }
   }]);

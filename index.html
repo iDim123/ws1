@@ -1,24 +1,23 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" ng-app="app">
 
 <head>
   <title>Плохиши</title>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="shortcut icon" href="/images/favicon.png" type="image/png">
 
-  <link href="build/css/bootstrap.min.css" rel="stylesheet">
-  <link href="build/css/styles.css" rel="stylesheet">
-  <link href='http://fonts.googleapis.com/css?family=Orbitron:700' rel='stylesheet' type='text/css'>
-  <link href='https://fonts.googleapis.com/css?family=Nunito:400,700' rel='stylesheet' type='text/css'>
-  <link href='https://fonts.googleapis.com/css?family=Sigmar+One' rel='stylesheet' type='text/css'>
-  <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Tangerine">
-  
-  <script src="build/js/vendors.js"></script>
-  <script src="build/js/scripts.js"></script>
+  <link rel="stylesheet" href="build/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="bower_components/ngGallery/src/css/ngGallery.css">
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">  
+    
+  <link rel="stylesheet" href="build/css/styles.css">  
+    
+ 
 </head>
 
-<body ng-app="app">
+<body ng-cloak>
   <div class="main-wrapper">
     <header ng-include="'templates/general/navigation.html'"></header>
     <div class="maincontent">
@@ -27,6 +26,12 @@
     <div class="clearing"></div>
     <footer ng-include="'templates/general/footer.html'"></footer>
   </div>
+  
+  <script src="build/js/vendors.js"></script>
+  <script src="https://www.youtube.com/iframe_api"></script>
+  <script src="node_modules/angular-youtube-embed/src/angular-youtube-embed.js"></script>
+  <script src="build/js/scripts.js"></script>
+  
 </body>
 
 </html>

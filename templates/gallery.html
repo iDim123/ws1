@@ -1,5 +1,20 @@
 <section id="section3">
- <div class="container">
-   <br><br><br><span>В разработке</span>
- </div>
+  <div class="container">
+    <br>
+    <br>
+    <br>
+    <div class="header-row">
+      <div class="header_text">Галлерея</div>
+    </div>
+    <div class="images_conteiner">
+      <div ng-controller="Ctrl as ctrl">
+        <ng-gallery images="ctrl.images" thumbs-num="15"></ng-gallery>
+      </div>
+    </div>
+    <div class="video_container">
+      <div class="game-video" ng-repeat="myvideo in myvideos">
+        <youtube-video video-id="myvideo.gameurl" player-width="'100%'" player-height="'100%'"></youtube-video>
+      </div>
+    </div>
+  </div>
 </section>

@@ -1,5 +1,4 @@
 //Корректируем Bootstrap
-
 nav{
   font-family: main-font;
 }
@@ -11,6 +10,7 @@ nav{
   font-size: 35px;
   line-height: 30px;
   text-shadow: 2px 2px 6px #000000;
+  letter-spacing: 4px;
 }
 .navbar-inverse{
   @include bg-nav-linear-gradient;
@@ -35,15 +35,13 @@ nav{
 //Login
 .login_conteiner{
   transition: top 1s;
-  //visibility: hidden;
   z-index: 99;
   position: absolute;
-  top: 51px;
-  //right: 5px;
+  top: 52px;
   right: 10%;
   height: 163px;
   width: 215px;
-  background-color: #212121;
+  background-color: #A3926E;
   padding: 8px 8px 2px 8px;
   text-align: center;
   border-top: 1px solid #8c6d53;
