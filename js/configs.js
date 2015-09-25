@@ -34,9 +34,12 @@
       templateUrl: app.TemplatePath + '/player-detail.html',  
       controller: 'PlayerDetailCtrl'
     })
+    .when('/devs',{
+      template: '<div id="contact_page"><div class="container"><h1>Связаться с разработчиками</h1> <br><h3> По вопросам и предложениям писать на почту: magmus02@gmail.com</h3></div></div>' 
+    })
     .otherwise({
       redirectTo: '/',
-      templateUrl: app.TemplatePath + '/home.html'  
+      templateUrl: app.TemplatePath + '/homepage.html'  
     })
   }]);
   

@@ -3,7 +3,7 @@
 
   app.Modules.app.controller('GalleryCtrl', ['$scope', 'testService', function ($scope, testService) {
      $scope.myvideos = [      {
-        "gameurl": "vB8xqdIbWMs"
+        "gameurl": "SsFKi4BB2uQ"
      }, {
         "gameurl": "S4k3ikvEY24"
      }, {

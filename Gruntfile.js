@@ -11,7 +11,8 @@ module.exports = function (grunt) {
               'bower_components/angular/angular.min.js',
               'bower_components/angular-route/angular-route.min.js',
               'bower_components/ui-bootstrap-0.13.4.min.js',
-              'bower_components/ngGallery/src/js/ngGallery.js'
+              'bower_components/ngGallery/src/js/ngGallery.js',
+              'node_modules/angular-youtube-embed/src/angular-youtube-embed.js'
           ],
         dest: 'build/js/vendors.js'
       },
@@ -43,6 +44,13 @@ module.exports = function (grunt) {
         }
       }
     },
+    uglify:{
+      dist:{
+        files:{
+          'build/js/scripts.min.js':['build/js/scripts.js']
+        }
+      }
+    },
     postcss: {
       options: {
         map: true,
@@ -63,7 +71,7 @@ module.exports = function (grunt) {
       },
       js: {
         files: ['js/**/**/*.js'],
-        tasks: ['concat:js']
+        tasks: ['concat:js','uglify']
       },
       sass: {
         files: ['css/**/**/*.scss'],
@@ -75,7 +83,8 @@ module.exports = function (grunt) {
   grunt.loadNpmTasks('grunt-contrib-concat');
   grunt.loadNpmTasks('grunt-contrib-watch');
   grunt.loadNpmTasks('grunt-contrib-sass');
+  grunt.loadNpmTasks('grunt-contrib-uglify');
   grunt.loadNpmTasks('grunt-postcss');
 
-  grunt.registerTask('default', ['sass', 'concat', 'postcss:dist', 'watch']);
+  grunt.registerTask('default', ['sass', 'concat', 'postcss:dist','uglify', 'watch']);
 };

@@ -1,7 +1,7 @@
 //Achievements Controlles
 (function (Controllers, undefined) {
 
-  app.Modules.app.controller('DungeonsTabsCtrl', ['$scope', '$http', '$sce', 'dungeons','$timeout', function ($scope, $http, $sce, dungeons,$timeout) {
+  app.Modules.app.controller('DungeonsTabsCtrl', ['$scope', '$http', 'dungeons', '$timeout', '$sce', function ($scope, $http, dungeons, $timeout, $sce) {
     $scope.dungeonvalue = 'lvl45';
     $http.get('json/dungeons.json').success(function (data) {
       $scope.dungeons = data;
@@ -23,27 +23,10 @@
       else
         return "kill-not-all";
     }
-    
-    /*$scope.showAll = function($event){
-      $event.target 
-      //console.log(mybosses.css('heigth'));
-    }*/
-    
-    /*this.myafter = $timeout(function(){
-      var quest = angular.element(document.querySelector(".dungeon_main-conteiner"));
-      quest.on('click', function(e){
-        //console.log(e);
-        var mybosses = quest.find('.d-col-bosses');
-        console.log(mybosses.css('heigth'));
-      });
-      //var mybosses = quest.find('.d-col-bosses');
-     /* console.log(mybosses.height);
-      console.log("555");*/
-   /* },500);*/
-    
-    //var questHeader = quest.find('h3');
+    $scope.to_trusted = function (html_code) {
+      return $sce.trustAsHtml(html_code);
+    }
   }]);
-
 
   app.Modules.app.filter("hardStar", function () {
     return function (stars) {
@@ -56,14 +39,16 @@
       } else if (stars > 1) {
         return "&#9733;&#9733;&#9734;&#9734;&#9734;";
       } else if (stars > 0) {
-        return "&#9733;&#9734;&#9733;&#9734;&#9734;";
+        return "&#9733;&#9734;&#9734;&#9734;&#9734;";
       }
-
     }
   });
-  app.Modules.app.filter('html', function ($sce) {
-    return $sce.trustAsHtml;
-  });
+    app.Modules.app.filter('to_html', ['$sce', function ($sce) {
+      return function (text) {
+        return $sce.trustAsHtml(text);
+      }
+    }]);
+
   app.Modules.app.filter('dungeonFilter', function () {
     return function (items, value) {
       var filtered = [];

@@ -10,28 +10,12 @@
       </div>
     </div>
   </div>
-  <!--  <div class="row">
-    <div class="col-lg-2">
-      <span><b>Фильтры:</b></span>
-    </div>
-    <div class="col-lg-2">
-      <span>Текущая страница: 1</span>
-    </div>
-    <div class="col-lg-4 col-lg-offset-4 text-right">
-      <span>Пред.</span>
-      <span>След.</span>
-    </div>
-  </div>-->
   <div class="row">
     <div class="col-lg-2 hidden-sm hidden-xs">
       <ul class="main_roster_filters">
         <li>
           <input type="text" ng-model="filterPlayer">
         </li>
-        <li>Танки</li>
-        <li>ДД</li>
-        <li>Хил</li>
-        <!--<li>Сапорт</li>-->
       </ul>
       <ul class="main_roster_info">
         <li><b>Общая информация:</b></li>
@@ -46,14 +30,6 @@
       <table class="table">
         <thead>
           <tr>
-            <!-- <th>ID</th>
-            <th><a href="" ng-click="sort('NickName')">Ник</a></th>
-            <th><a href="" ng-click="sort('Class')">Класс</a></th>
-            <th><a href="" ng-click="sort('Specialization')">Роль</a></th>
-            <th><a href="" ng-click="sort('Lvl')">Ур.</a></th>
-            <th><a href="" ng-click="sort('GuildRang')">Ранг</a></th>
-            <th><a href="" ng-click="sort('Itemslvl')">Ур. предметов</a></th>
-            <th><a href="" ng-click="sort('Achivements')">Достижения</a></th>-->
             <th>ID</th>
             <th class="NickName" custom-sort order="'NickName'" sort="sort">Ник&nbsp;</th>
             <th class="Class" custom-sort order="'Class'" sort="sort">Класс&nbsp;</th>
@@ -64,7 +40,6 @@
             <th class="Achivements" custom-sort order="'Achivements'" sort="sort">Достижения&nbsp;</th>
           </tr>
         </thead>
-
         <tfoot>
           <td colspan="8">
             <div class="pagination pull-right">
@@ -82,19 +57,8 @@
             </div>
           </td>
         </tfoot>
-
         <tbody>
-          <!--   <tr ng-repeat="player in players | orderBy:sortField:reverse | limitTo:35">-->
           <tr ng-repeat="item in pagedItems[currentPage] | orderBy:sort.sortingOrder:sort.reverse | filter: filterPlayer">
-            <!--  <td>{{$index + 1}}</td>
-            <td><a href="#/players_table/{{player.Id}}">{{player.NickName}}</a></td>
-            <td>{{player.Id}}</td>
-            <td>{{player.Class}}</td>
-            <td>{{player.Specialization}}</td>
-            <td>{{player.Lvl}}</td>
-            <td>{{player.GuildRang}}</td>
-            <td>{{player.Itemslvl}}</td>
-            <td>{{player.Achivements}}</td>-->
             <td>{{item.Id}}</td>
             <td>{{item.NickName}}</td>
             <td>{{item.Class}}</td>

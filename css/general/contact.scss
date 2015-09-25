@@ -1,12 +1,7 @@
 #contact_page{
-  h1{
+  padding-top: 51px;
+  h1,h3,h4{
     color: rgb(240, 248, 255);
-  }
-  h6{
-    color: #000000;
-  }
-  
-  .row{
-    margin-bottom: 10px;
+    text-shadow: 1px 1px 1px black;
   }
 }

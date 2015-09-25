@@ -44,6 +44,9 @@ footer {
   text-align: center;
   vertical-align: middle;
   color: $footer_text_color;
+  a{
+    color: rgb(240, 248, 255);
+  }
 }
 .copyright {
   font-size: 12px;
@@ -83,7 +86,6 @@ footer {
   color: darken($footer_text_color, 20%);
   display: block;
   &:hover {
-    color: darken($footer_bg_active_color, 30%);
     text-decoration: underline;
   }
 }
