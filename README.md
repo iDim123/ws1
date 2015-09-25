@@ -1,3 +1,3 @@
-Guild site http://guysguild.mcdir.ru/#/
+Guild site http://leb.guysguild.mcdir.ru/#/
 
 Creating website using AngularJS
